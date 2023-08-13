@@ -94,7 +94,7 @@ li {
 }
 
 .header-logo a {
-  color: #fff;
+  color: purple;
 }
 
 .header-nav-list {
@@ -110,7 +110,7 @@ li {
   font-size: 13px;
   padding: 5px 0;
   letter-spacing: .1em;
-  color: #fff;
+  color: purple;
 }
 
 .header-nav-item a:hover {
@@ -121,8 +121,8 @@ li {
  メインビジュアル
 ---------------------------------*/
 .main-visual-img {
-  height: 700px;
-  background-image: url(../img/mv.jpg);
+  height: 770px;
+  background-image: url(../img/mv.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -130,7 +130,7 @@ li {
 
 .sub-main-visual-img {
   height: 180px;
-  background-image: url(../img/mv.jpg);
+  background-image: url(../img/mv.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -181,6 +181,8 @@ li {
 
 .works-img img {
   border: 1px solid #e6e6e6;
+  height: 300px;
+  width: 400px;
 }
 
 .works-name {
