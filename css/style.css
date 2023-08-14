@@ -33,7 +33,7 @@ li {
 }
 
 /*--------------------------------
- レイアウト
+ Layout
 ---------------------------------*/
 .section {
   padding: 80px 0;
@@ -46,7 +46,7 @@ li {
 }
 
 /*--------------------------------
- 見出し
+ Headline
 ---------------------------------*/
 .title {
   font-size: 34px;
@@ -64,7 +64,7 @@ li {
 }
 
 /*--------------------------------
-ヘッダー
+ Header
 ---------------------------------*/
 .header {
   position: fixed;
@@ -118,14 +118,15 @@ li {
 }
 
 /*--------------------------------
- メインビジュアル
+ main visual
 ---------------------------------*/
 .main-visual-img {
-  height: 770px;
-  background-image: url(../img/mv.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: 840px;
+  overflow: hidden;
+}
+
+.main-visual-img img{
+  object-fit: cover;
 }
 
 .sub-main-visual-img {
@@ -137,7 +138,7 @@ li {
 }
 
 /*--------------------------------
- プロフィール
+ Profile
 ---------------------------------*/
 .profile {
   padding: 50px 0;
@@ -247,7 +248,7 @@ li {
   text-align: center;
 }
 /*--------------------------------
- ページトップ
+ Page top
 ---------------------------------*/
 .page-top {
   font-weight: bold;
@@ -262,7 +263,7 @@ li {
 }
 
 /*--------------------------------
- フッター
+ Footer
 ---------------------------------*/
 .footer {
   padding: 30px;
@@ -276,7 +277,7 @@ li {
 }
 
 /*--------------------------------
- 下層：Worksページ
+ Works page ?
 ---------------------------------*/
 .article {
   padding: 50px 0;
@@ -334,13 +335,13 @@ li {
     display: block;
   }
 
-  /* 見出し */
+  /* Headline */
   .title {
     font-size: 26px;
     margin-bottom: 20px;
   }
 
-  /* レイアウト */
+  /* Layout */
   .section {
     padding: 40px 0;
   }
@@ -349,7 +350,7 @@ li {
     padding: 0 15px;
   }
 
-  /* ヘッダー */
+  /* Header */
   .header-logo {
     font-size: 16px;
   }
@@ -362,17 +363,16 @@ li {
     font-size: 12px;
   }
 
-  /* メインビジュアル */
+  /* main visual */
   .main-visual-img {
     height: 60vh;
-    background-image: url(../img/sp_mv.jpg);
   }
   .sub-main-visual-img {
     height: 100px;
     background-image: url(../img/sp_mv.jpg);
   }
 
-  /* プロフィール */
+  /* Profile */
   .profile {
     padding: 30px 0;
   }
@@ -415,7 +415,7 @@ li {
     margin: 0 10px;
   }
 
-  /* フッター */
+  /* Footer */
   .footer {
     padding: 20px 0;
   }
