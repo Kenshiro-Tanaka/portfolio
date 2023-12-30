@@ -1,0 +1,88 @@
+//reset.css
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+//variables.css
+
+$color: #4f3fff;
+$circle-size: 60px;
+
+//style.css
+#experience {
+    width: 100%;
+    padding: 20px 0;
+
+    .experience-unit {
+        width: 100%;
+
+        .bar {
+            display: block;
+            height: 30px;
+            width: 1px;
+            margin: 0 auto;
+            background-color: $color;
+        }
+
+        .unit-flex {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .title-container,
+            .description-container {
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                width: calc((100% - $circle-size) / 2);
+            }
+
+            // .maw-300{
+            //     max-width: 300px;
+            // }
+
+            .title-container {
+                justify-content: flex-end;
+            }
+
+            .description-container {
+                justify-content: flex-start;
+            }
+
+            .image-circle {
+                width: $circle-size;
+                height: $circle-size;
+                border: 1px solid $color;
+                border-radius: 1000px;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:nth-of-type(even) {
+            .unit-flex {
+                flex-direction: row-reverse;
+
+                .title-container {
+                    justify-content: flex-start;
+                }
+
+                .description-container {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
