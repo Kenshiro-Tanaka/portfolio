@@ -17,13 +17,6 @@ html {
   #experience .experience-unit {
     width: 100%;
   }
-  #experience .experience-unit .bar {
-    display: block;
-    height: 30px;
-    width: 1px;
-    margin: 0 auto;
-    background-color: #4f3fff;
-  }
   #experience .experience-unit .unit-flex {
     width: 100%;
     display: flex;
@@ -31,27 +24,48 @@ html {
   }
   #experience .experience-unit .unit-flex .title-container,
   #experience .experience-unit .unit-flex .description-container {
-    padding: 0 10px;
+    padding: 30px 10px;
     display: flex;
     align-items: center;
     width: calc((100% - 60px) / 2);
   }
-  #experience .experience-unit .unit-flex .title-container {
-    justify-content: flex-end;
+  #experience .experience-unit .unit-flex .maw-300 {
+    max-width: 300px;
   }
-  #experience .experience-unit .unit-flex .description-container {
-    justify-content: flex-start;
+  #experience .experience-unit .unit-flex .center-container {
+    display: flex;
+    flex-direction: column;
   }
-  #experience .experience-unit .unit-flex .image-circle {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #4f3fff;
+  #experience .experience-unit .unit-flex .center-container .bar {
+    flex-grow: 1;
+    display: block;
+    width: 4px;
+    margin: 0 auto;
+    background-color: purple;
+    min-height: 20px;
+  }
+  #experience .experience-unit .unit-flex .center-container .image-circle {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border: 4px solid purple;
+    box-sizing: border-box;
     border-radius: 1000px;
     overflow: hidden;
   }
-  #experience .experience-unit .unit-flex .image-circle img {
+  #experience .experience-unit .unit-flex .center-container .image-circle img {
     height: 100%;
     width: 100%;
+  }
+  #experience .experience-unit .unit-flex .title-container {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #experience .experience-unit .unit-flex .title-container .title{
+    margin: 0;
+  }
+  #experience .experience-unit .unit-flex .description-container {
+    justify-content: flex-start;
   }
   #experience .experience-unit:nth-of-type(even) .unit-flex {
     flex-direction: row-reverse;
@@ -61,4 +75,4 @@ html {
   }
   #experience .experience-unit:nth-of-type(even) .unit-flex .description-container {
     justify-content: flex-end;
-  }/*# sourceMappingURL=sample_experience.css.map */
+  }

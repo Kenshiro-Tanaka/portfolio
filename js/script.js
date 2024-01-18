@@ -38,3 +38,28 @@ $(function () {
     return false;
   });
 });
+
+
+let preventChildsActions = document.getElementsByClassName("stopPropagation");
+
+// for (let i = 0; i < preventChildsActions.length; i++) {
+//     preventChildsActions[i].addEventListener('click', function (e) {
+//         e.stopPropagation(); // 自身の親要素へクリックイベントを伝えない
+//     });
+// }
+
+function displayModal(contentName) {
+    const modalWrapper = document.getElementById("modal-wrapper");
+    modalWrapper.classList.remove('hidden');
+    modalWrapper.classList.add(contentName);
+}
+
+function hideModal() {
+    const modalWrapper = document.getElementById("modal-wrapper");
+    modalWrapper.classList.add('hidden');
+    modalWrapper.classList.remove('works_system');
+    modalWrapper.classList.remove('works_company');
+    modalWrapper.classList.remove('works_security2');
+    
+}
+

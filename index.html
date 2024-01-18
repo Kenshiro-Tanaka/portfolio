@@ -20,13 +20,29 @@
 </head>
 
 <body>
-  <div class="wrapper">
-
+  <div class="wrapper whole-page" >
+    <div id="modal-wrapper" class="hidden" onclick="hideModal()">
+      <div class="modal-window stopPropagation works_system">
+          <h3>
+              モーダルのタイトル1
+          </h3>
+      </div>
+      <div class="modal-window stopPropagation works_company">
+        <h3>
+            モーダルのタイトル2
+        </h3>
+    </div>
+    <div class="modal-window stopPropagation works_security2">
+      <h3>
+          モーダルのタイトル3
+      </h3>
+  </div>
+  </div>
     <!-- header -->
     <header class="header">
       <div class="header-inner">
         <h1 class="header-logo">
-          <a href=".">NAT's Portfolio</a>
+          <img src="./img/logo.svg" alt="">
         </h1>
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -98,7 +114,7 @@
                 <h3 class="skill-name">プログラミング</h3>
                 <p class="skill-text">
                   研究と競技プログラミングで Python を使用．ハッカソンやインターンシップの開発でも使用した．C++ も一応使える．就活が終わったら Java と Go言語を勉強したい．
-                  ある企業のコーディングテストに落ちたため自信をなくしている．</p>
+                  ある企業のコーディングテストに落ちたため自信をなくした．</p>
               </div>
             </div>
           </div>
@@ -111,17 +127,17 @@
         <div class="inner">
           <h2 class="title">Works</h2>
           <div class="works-list">
-            <a class="works-item" href="works-template.html">
+            <a class="works-item" onclick="displayModal('works_system')">
               <p class="works-img"><img src="img/works_system.svg" alt="" /></p>
               <p class="works-name">卒業論文および学会発表</p>
               <p class="works-info">Research</p>
             </a>
-            <a class="works-item" href="works-template.html">
+            <a class="works-item" onclick="displayModal('works_company')">
               <p class="works-img"><img src="img/works_company.svg" alt="" /></p>
               <p class="works-name">VS.ペアレンツ</p>
               <p class="works-info">Programming / Hackathon</p>
             </a>
-            <a class="works-item" href="works-template.html">
+            <a class="works-item" onclick="displayModal('works_security2')">
               <p class="works-img"><img src="img/works_security2.svg" alt="" /></p>
               <p class="works-name">Qiita</p>
               <p class="works-info">Blog / Programming / Research</p>
@@ -136,113 +152,123 @@
         <div class="inner">
           <h2 class="title">Experience</h2>
           <div class="experience-unit">
-            <span class="bar"></span>
             <div class="unit-flex">
                 <div class="title-container maw-300">
                     <div class="title-inner">
                         <h3 class="title">仮面浪人</h3>
                     </div>
                 </div>
-                <div class="image-circle">
-                    <img src="img/works_company.svg" alt="">
+                <div class="center-container">
+                    <span class="bar"></span>
+                    <div class="image-circle">
+                        <img src="./img/works_system.svg" alt="">
+                    </div>
+                    <span class="bar"></span>
                 </div>
                 <div class="description-container maw-300">
                     <div class="description-inner">
                         <p class="description">
-                            興味のある分野について，より切磋琢磨できる環境に身を置きたいと考えて仮面浪人を決意．スキマ時間に勉強を重ね，仮面先でフル単を達成しつつ，本命の大学に合格．
+                          興味のある分野について，より切磋琢磨できる環境に身を置きたいと考えて仮面浪人を決意．スキマ時間に勉強を重ね，仮面先でフル単を達成しつつ，本命の大学に合格．
                         </p>
                     </div>
                 </div>
             </div>
-            <span class="bar"></span>
-        </div>
-        <div class="experience-unit">
-            <span class="bar"></span>
+          </div>
+          <div class="experience-unit">
             <div class="unit-flex">
                 <div class="title-container maw-300">
                     <div class="title-inner">
                         <h3 class="title">大学院入学試験および資格試験</h3>
                     </div>
                 </div>
-                <div class="image-circle">
-                    <img src="img/works_company.svg" alt="">
+                <div class="center-container">
+                    <span class="bar"></span>
+                    <div class="image-circle">
+                        <img src="./img/works_system.svg" alt="">
+                    </div>
+                    <span class="bar"></span>
                 </div>
                 <div class="description-container maw-300">
                     <div class="description-inner">
                         <p class="description">
-                            学部生時代に高い成績をとったおかげで大学院の入学試験を免除．
-                            入試勉強をしなくてよくなった分の時間ができたため資格試験の勉強時間に充てて，そちらも合格．
+                          学部生時代に高い成績をとったおかげで大学院の入学試験を免除．
+                          入試勉強をしなくてよくなった分の時間ができたため資格試験の勉強時間に充てて，そちらも合格．
                         </p>
                     </div>
                 </div>
             </div>
-            <span class="bar"></span>
-        </div>
-        <div class="experience-unit">
-          <span class="bar"></span>
-          <div class="unit-flex">
-              <div class="title-container maw-300">
-                  <div class="title-inner">
-                      <h3 class="title">卒業研究とハッカソン</h3>
-                  </div>
-              </div>
-              <div class="image-circle">
-                  <img src="img/works_company.svg" alt="">
-              </div>
-              <div class="description-container maw-300">
-                  <div class="description-inner">
-                      <p class="description">
+          </div>
+          <div class="experience-unit">
+            <div class="unit-flex">
+                <div class="title-container maw-300">
+                    <div class="title-inner">
+                        <h3 class="title">卒業研究とハッカソン</h3>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <span class="bar"></span>
+                    <div class="image-circle">
+                        <img src="./img/works_system.svg" alt="">
+                    </div>
+                    <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                    <div class="description-inner">
+                        <p class="description">
                           2023年1月，卒業研究に追われながらハッカソンにも参加．<br>
                           3月には卒業研究の続きで海外との共同実験．
-                      </p>
-                  </div>
-              </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
           </div>
-          <span class="bar"></span>
-      </div>
-        <div class="experience-unit">
-            <span class="bar"></span>
+          <div class="experience-unit">
             <div class="unit-flex">
                 <div class="title-container maw-300">
                     <div class="title-inner">
                         <h3 class="title">サマーインターンシップ</h3>
                     </div>
                 </div>
-                <div class="image-circle">
-                    <img src="img/works_company.svg" alt="">
+                <div class="center-container">
+                    <span class="bar"></span>
+                    <div class="image-circle">
+                        <img src="./img/works_system.svg" alt="">
+                    </div>
+                    <span class="bar"></span>
                 </div>
                 <div class="description-container maw-300">
                     <div class="description-inner">
                         <p class="description">
-                            メガバンクのグループIT会社や情報セキュリティ会社など 2 days - 2 weeksのインターンシップに参加した．
-                            基本的なウォーターフォール型開発の全工程を経験できた．
+                          メガバンクのグループIT会社や情報セキュリティ会社など 2 days - 2 weeksのインターンシップに参加した．
+                          基本的なウォーターフォール型開発の全工程を経験できた．
                         </p>
                     </div>
                 </div>
             </div>
-            <span class="bar"></span>
-        </div>
-        <div class="experience-unit">
-            <span class="bar"></span>
+          </div>
+          <div class="experience-unit">
             <div class="unit-flex">
                 <div class="title-container maw-300">
                     <div class="title-inner">
                         <h3 class="title">就職活動</h3>
                     </div>
                 </div>
-                <div class="image-circle">
-                    <img src="img/works_company.svg" alt="">
+                <div class="center-container">
+                    <span class="bar"></span>
+                    <div class="image-circle">
+                        <img src="./img/works_system.svg" alt="">
+                    </div>
+                    <span class="bar"></span>
                 </div>
                 <div class="description-container maw-300">
                     <div class="description-inner">
                         <p class="description">
-                            2023年12月現在，情報セキュリティ業界に就職することを夢見て活動中．
+                          2023年12月現在，情報セキュリティ業界に就職することを夢見て活動中．
                         </p>
                     </div>
                 </div>
             </div>
-            <span class="bar"></span>
-        </div>
+          </div>
       </div>
     </section>
       <!-- /experience -->
@@ -258,7 +284,7 @@
             <a class="contact-item" href="https://twitter.com/e_tanakaNAT" target="_blank" rel="noopener">X(Twitter)</a>
             <a class="contact-item" href="https://qiita.com/NAT" target="_blank" rel="noopener">Qiita</a>
             <a class="contact-item" href="https://github.com/Kenshiro-Tanaka" target="_blank" rel="noopener">GitHub</a>
-            <span class="contact-item">e-ars-longa@gmail.com</span>
+            <span class="contact-item">e.ars.longa@gmail.com</span>
           </div>
         </div>
       </section>
