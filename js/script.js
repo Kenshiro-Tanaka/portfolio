@@ -49,17 +49,28 @@ let preventChildsActions = document.getElementsByClassName("stopPropagation");
 // }
 
 function displayModal(contentName) {
-    const modalWrapper = document.getElementById("modal-wrapper");
-    modalWrapper.classList.remove('hidden');
-    modalWrapper.classList.add(contentName);
+    const currentOpenModal = document.getElementById(contentName);
+    document.getElementById("modal-wrapper").classList.remove("hidden");
+    // currentOpenModal.classList.remove('hidden');
+    // console.log(contentName);
+    currentOpenModal.classList.add('open');
 }
 
 function hideModal() {
-    const modalWrapper = document.getElementById("modal-wrapper");
-    modalWrapper.classList.add('hidden');
-    modalWrapper.classList.remove('works_system');
-    modalWrapper.classList.remove('works_company');
-    modalWrapper.classList.remove('works_security2');
+    const modals = document.getElementsByClassName("modal-window");
+    document.getElementById("modal-wrapper").classList.add("hidden");
+    for(let i = 0; i < modals.length;i++){
+      modals[i].classList.remove('open')
+    }
+    // modalWrapper.classList.add('hidden');
+    // modalWrapper.classList.remove('works_game');
+    // modalWrapper.classList.remove('works_paper');
+    // modalWrapper.classList.remove('works_hackathon');
+    // modalWrapper.classList.remove('works_qiita');
+    // modalWrapper.classList.remove('works_ippon');
+    // modalWrapper.classList.remove('works_system');
+    // modalWrapper.classList.remove('works_company');
+    // modalWrapper.classList.remove('works_security2');
     
 }
 
