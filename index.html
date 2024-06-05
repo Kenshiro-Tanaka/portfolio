@@ -19,6 +19,11 @@
     <link href="./css/sample_experience.css" media="all" rel="stylesheet" type="text/css" />
 
     <link rel="shortcut icon" href="img/main-NAT.png" />
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="js/particles/particles.js"></script>
+    <script src="js/particles/app.js"></script>
+    
     <!-- <link rel=”canonical” href=”URLが入る” /> -->
   </head>
 
@@ -32,8 +37,8 @@
           </h1>
           <nav class="header-nav">
             <ul class="header-nav-list">
-              <li class="header-nav-item"><a href="#skill">Skill</a></li>
               <li class="header-nav-item"><a href="#works">Works</a></li>
+              <li class="header-nav-item"><a href="#skill">Skill</a></li>
               <li class="header-nav-item"><a href="#experience">Experience</a></li>
               <li class="header-nav-item"><a href="#contact">Contact</a></li>
             </ul>
@@ -45,28 +50,133 @@
       <main class="content">
         <!-- main-visual -->
         <div class="main-visual">
-          <div class="main-visual-img">
-            <img src="./img/mv.svg" alt="">
+          <div id="particles-js">
+          </div>
+          <div class="profile">
+            <div class="inner">
+              <p class="profile-title">田中 a.k.a. NAT</p>
+              <p class="profile-text">
+                国立大修士2年生で IoT と環境音分析の2分野を研究している．
+                情報セキュリティ業界を盛り上げたく，セキュリティエンジニアとして2025年に就職する予定．
+              </p>
+            </div>
           </div>
         </div>
         <!-- /main-visual -->
-
-        <div class="profile">
+        
+        <!-- works -->
+        <section class="works section" id="works">
           <div class="inner">
-            <p class="profile-title">田中 a.k.a. NAT</p>
-            <p class="profile-text">
-              国立大修士2年生で IoT と環境音分析の2分野を研究している．
-              情報セキュリティ業界を盛り上げたく，セキュリティエンジニアとして2025年に就職する予定．
-            </p>
-          </div>
-        </div>
+            <h2 class="title">Works</h2>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper works-list">
+                  <!-- Slides -->
+                  <div class="works-item swiper-slide" onclick="displayModal('works_game')">
+                    <p class="works-img"><img src="img/siro.png" alt="" /></p>
+                    <div class="works-text">
+                      <p class="works-name">ゲーム制作</p>
+                      <p class="works-info">Programming</p>
+                    </div>
+                  </div>
+                  <div class="works-item swiper-slide" onclick="displayModal('works_paper')">
+                    <p class="works-img"><img src="img/works_system.svg" alt="" /></p>
+                    <div class="works-text">
+                      <p class="works-name">卒業論文および学会発表</p>
+                      <p class="works-info">Research</p>
+                    </div>
+                  </div>
+                  <div class="works-item swiper-slide" onclick="displayModal('works_security2')">
+                    <p class="works-img"><img src="img/hackathon_proto.png" alt="" /></p>
+                    <div class="works-text">
+                      <p class="works-name">VS.ペアレンツ</p>
+                      <p class="works-info">Programming / Hackathon</p>
+                    </div>
+                  </div>
+                  <div class="works-item swiper-slide" onclick="displayModal('works_qiita')">
+                    <p class="works-img"><img src="img/qiita.png" alt="" /></p>
+                    <div class="works-text">
+                      <p class="works-name">Qiita</p>
+                      <p class="works-info">Blog / Programming / Research</p>
+                    </div>
+                  </div>
+                  <div class="works-item swiper-slide" onclick="displayModal('works_ippon')">
+                    <p class="works-img"><img src="img/ippon.png" alt="" /></p>
+                    <div class="works-text">
+                      <p class="works-name">IPPON PROFILE GENERATOR</p>
+                      <p class="works-info">Programming</p>
+                    </div>
+                  </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+      
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+      
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div id="modal-wrapper" class="hidden" onclick="hideModal()">
+              <div class="modal-window stopPropagation" id="works_game">
+                <h3>
+                  ゲーム制作
+                </h3>
+                <img src="img/gamen.png" alt="" />
+                <p>何を考えて作ったのか</p>
+                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
+                <p>ここで得た学びをどう活かしたのか</p>
+              </div>
+              <div class="modal-window stopPropagation" id="works_paper">
+                <h3>
+                    卒業論文および学会発表
+                </h3>
+                <img src="img/works_system.svg" alt="" width="80%" height="80%" />
+                <p>何を考えて作ったのか</p>
+                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
+                <p>ここで得た学びをどう活かしたのか</p>
+              </div>
+              <div class="modal-window stopPropagation" id="works_security2">
+                <h3>
+                  VS.ペアレンツ
+                </h3>
+                <img src="img/hackathon_proto.png" alt="" /></p>
+                <p>何を考えて作ったのか</p>
+                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
+                <p>ここで得た学びをどう活かしたのか</p>
+              </div>
+              <div class="modal-window stopPropagation" id="works_qiita">
+                <h3>
+                    Qiita
+                </h3>
+                <img src="img/qiita.png" alt="" />
+                <a class="contact-item" href="https://qiita.com/NAT" target="_blank" rel="noopener">https://qiita.com/NAT</a>
+                <p>私のトップページに飛びます．</p>
+                <p>何を考えて作ったのか</p>
+                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
+                <p>ここで得た学びをどう活かしたのか</p>
+              </div>
+              <div class="modal-window stopPropagation" id="works_ippon">
+                <h3>
+                    IPPON PROFILE GENERATOR
+                </h3>
+                <img src="img/ippon.png" alt="" width="80%" height="80%" />
+                <a class="contact-item" href="https://qiita.com/NAT/items/6413df806c2214d76230" target="_blank" rel="noopener">ここに記事あります．</a>
+                <p>何を考えて作ったのか</p>
+                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
+                <p>ここで得た学びをどう活かしたのか</p>
+              </div>
+            </div>
+        </section>
+        <!-- /works -->
 
         <!-- skill -->
         <section class="skill section" id="skill">
           <div class="inner">
             <h2 class="title">Skill</h2>
             <div class="skill-list">
-              <div class="skill-item">
+              <div class="gsap-target-skill gsap-scrolltrigger-skill skill-item">
                 <p class="skill-img"><img src="img/works_security2.svg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">応用情報技術者試験合格</h3>
@@ -74,7 +184,7 @@
                     2022年秋期試験で合格．現在は情報処理安全確保支援士試験合格に向けて勉強中．</p>
                 </div>
               </div>
-              <div class="skill-item">
+              <div class="gsap-target-skill gsap-scrolltrigger-skill skill-item">
                 <p class="skill-img"><img src="img/works_security2.svg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">Basic SecCap 10</h3>
@@ -83,7 +193,7 @@
                     2022年度に北海道地区で Basic SecCap 10を取得したのは自分を含めて2人だった．</p>
                 </div>
               </div>
-              <div class="skill-item">
+              <div class="gsap-target-skill gsap-scrolltrigger-skill skill-item">
                 <p class="skill-img"><img src="img/works_security2.svg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">TOEIC 755点</h3>
@@ -91,7 +201,7 @@
                     大学院入試のために2022年2月 TOEIC を受験．入社までに900点をとっておきたい気持ちと研究発表のためにスピーキングを勉強したい気持ちで板挟み．
                 </div>
               </div>
-              <div class="skill-item">
+              <div class="gsap-target-skill gsap-scrolltrigger-skill skill-item">
                 <p class="skill-img"><img src="img/works_security2.svg" alt=""></p>
                 <div class="skill-body">
                   <h3 class="skill-name">プログラミング</h3>
@@ -104,96 +214,11 @@
         </section>
         <!-- /skill -->
 
-        <!-- works -->
-        <section class="works section" id="works">
-          <div class="inner">
-            <h2 class="title">Works</h2>
-            <div class="works-list">
-              <a class="works-item" onclick="displayModal('works_game')">
-                <p class="works-img"><img src="img/siro.png" alt="" /></p>
-                <p class="works-name">ゲーム制作</p>
-                <p class="works-info">Programming</p>
-              </a>
-              <a class="works-item" onclick="displayModal('works_paper')">
-                <p class="works-img"><img src="img/works_system.svg" alt="" /></p>
-                <p class="works-name">卒業論文および学会発表</p>
-                <p class="works-info">Research</p>
-              </a>
-              <a class="works-item" onclick="displayModal('works_security2')">
-                <p class="works-img"><img src="img/hackathon_proto.png" alt="" /></p>
-                <p class="works-name">VS.ペアレンツ</p>
-                <p class="works-info">Programming / Hackathon</p>
-              </a>
-              <a class="works-item" onclick="displayModal('works_qiita')">
-                <p class="works-img"><img src="img/qiita.png" alt="" /></p>
-                <p class="works-name">Qiita</p>
-                <p class="works-info">Blog / Programming / Research</p>
-              </a>
-              <a class="works-item" onclick="displayModal('works_ippon')">
-                <p class="works-img"><img src="img/ippon.png" alt="" /></p>
-                <p class="works-name">IPPON PROFILE GENERATOR</p>
-                <p class="works-info">Programming</p>
-              </a>
-            </div>
-          </div>
-          <div id="modal-wrapper" class="hidden" onclick="hideModal()">
-            <div class="modal-window stopPropagation" id="works_game">
-              <h3>
-                ゲーム制作
-              </h3>
-              <img src="img/gamen.png" alt="" />
-              <p>何を考えて作ったのか</p>
-              <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-              <p>ここで得た学びをどう活かしたのか</p>
-            </div>
-            <div class="modal-window stopPropagation" id="works_paper">
-              <h3>
-                  卒業論文および学会発表
-              </h3>
-              <img src="img/works_system.svg" alt="" width="80%" height="80%" />
-              <p>何を考えて作ったのか</p>
-              <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-              <p>ここで得た学びをどう活かしたのか</p>
-            </div>
-            <div class="modal-window stopPropagation" id="works_security2">
-              <h3>
-                VS.ペアレンツ
-              </h3>
-              <img src="img/hackathon_proto.png" alt="" /></p>
-              <p>何を考えて作ったのか</p>
-              <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-              <p>ここで得た学びをどう活かしたのか</p>
-            </div>
-            <div class="modal-window stopPropagation" id="works_qiita">
-              <h3>
-                  Qiita
-              </h3>
-              <img src="img/qiita.png" alt="" />
-              <a class="contact-item" href="https://qiita.com/NAT" target="_blank" rel="noopener">https://qiita.com/NAT</a>
-              <p>私のトップページに飛びます．</p>
-              <p>何を考えて作ったのか</p>
-              <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-              <p>ここで得た学びをどう活かしたのか</p>
-            </div>
-            <div class="modal-window stopPropagation" id="works_ippon">
-              <h3>
-                  IPPON PROFILE GENERATOR
-              </h3>
-              <img src="img/ippon.png" alt="" width="80%" height="80%" />
-              <a class="contact-item" href="https://qiita.com/NAT/items/6413df806c2214d76230" target="_blank" rel="noopener">ここに記事あります．</a>
-              <p>何を考えて作ったのか</p>
-              <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-              <p>ここで得た学びをどう活かしたのか</p>
-            </div>
-          </div>
-        </section>
-        <!-- /works -->
-
         <!-- experience -->
-        <section class="experience section" id="experience">
+        <section class="experience section bg-black" id="experience">
           <div class="inner">
             <h2 class="title">Experience</h2>
-            <div class="experience-unit">
+            <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
                   <div class="title-container maw-300">
                       <div class="title-inner">
@@ -216,7 +241,7 @@
                   </div>
               </div>
             </div>
-            <div class="experience-unit">
+            <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
                   <div class="title-container maw-300">
                       <div class="title-inner">
@@ -240,7 +265,7 @@
                   </div>
               </div>
             </div>
-            <div class="experience-unit">
+            <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
                   <div class="title-container maw-300">
                       <div class="title-inner">
@@ -263,7 +288,7 @@
                   </div>
               </div>
             </div>
-            <div class="experience-unit">
+            <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
                   <div class="title-container maw-300">
                       <div class="title-inner">
@@ -287,29 +312,6 @@
                   </div>
               </div>
             </div>
-            <!-- <div class="experience-unit">
-              <div class="unit-flex">
-                  <div class="title-container maw-300">
-                      <div class="title-inner">
-                          <h3 class="experience-title">test</h3>
-                      </div>
-                  </div>
-                  <div class="center-container">
-                      <span class="bar"></span>
-                      <div class="image-circle">
-                          <img src="./img/works_system.svg" alt="">
-                      </div>
-                      <span class="bar"></span>
-                  </div>
-                  <div class="description-container maw-300">
-                      <div class="description-inner">
-                          <p class="description">
-                            test
-                          </p>
-                      </div>
-                  </div>
-              </div>
-            </div> -->
         </div>
       </section>
         <!-- /experience -->
@@ -319,13 +321,13 @@
           <div class="inner">
             <h2 class="title">Contact</h2>
             <p class="lead">
-              お問い合わせは<br class="sp-only">メールにてお願いいたします．（Xは2024年4月頃再開予定．）
+              お問い合わせはX（旧Twitter）のDMにて<br>
+              お願いいたします．（Xは2024年7月頃再開予定．）
             </p>
             <div class="contact-list">
               <a class="contact-item" href="https://twitter.com/e_tanakaNAT" target="_blank" rel="noopener">X（旧Twitter）</a>
               <a class="contact-item" href="https://qiita.com/NAT" target="_blank" rel="noopener">Qiita</a>
               <a class="contact-item" href="https://github.com/Kenshiro-Tanaka" target="_blank" rel="noopener">GitHub</a>
-              <span class="contact-item">e.ars.longa@gmail.com</span>
             </div>
           </div>
         </section>
@@ -342,6 +344,11 @@
       <!-- /footer -->
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/gsap/gsap.js"></script>
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper/swiper.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type='text/javascript' src="js/script.js"></script>
   </body>
