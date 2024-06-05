@@ -32,15 +32,23 @@ li {
   display: block;
 }
 
-.sp-only {
-  display: none;
-}
-
 /*--------------------------------
  Layout
 ---------------------------------*/
 .section {
   padding: 80px 0;
+}
+
+.bg-black{
+  background-color: black;
+}
+
+.bg-black p, .bg-black h2, .bg-black h3, .bg-black a{
+  color: white !important;
+}
+
+.section:last-of-type{
+  padding-bottom: 0;
 }
 
 .inner {
@@ -59,7 +67,7 @@ li {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .05em;
-  color: rgb(189, 114, 189);
+  color: #7266A1;
 }
 
 .lead {
@@ -74,6 +82,7 @@ li {
 
 .whole-page #modal-wrapper {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   height: 100svh;
@@ -93,7 +102,9 @@ li {
   box-sizing: border-box;
   padding: 10px;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 10000;
+  position: relative;
+  transform: translate(0px, 0px);
 }
 
 .whole-page .hidden {
@@ -103,6 +114,9 @@ li {
 .whole-page #modal-wrapper .modal-window.open{
   display: block;
 }
+/*--------------------------------
+ Swiper
+---------------------------------*/
 
 .works_system, .works_company, .works_security2 {
   display: none;
@@ -132,7 +146,7 @@ li {
 }
 
 .header.active {
-  background-color: rgba(190, 110, 190, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .header-inner {
@@ -143,16 +157,15 @@ li {
 }
 
 .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 20px;
-  height: 50px;
+  height: 35px;
 }
 
 .header-logo img {
-  height: 100px;
-}
-
-.header-logo a {
-  color: #b3b3b3;
+  height: 110px;
 }
 
 .header-nav-list {
@@ -165,10 +178,10 @@ li {
 }
 
 .header-nav-item a {
-  font-size: 30px;
+  font-size: 20px;
   padding: 5px 0;
   letter-spacing: .1em;
-  color: #737d6d;
+  color: #444853;
 }
 
 .header-nav-item a:hover {
@@ -178,6 +191,10 @@ li {
 /*--------------------------------
  main visual
 ---------------------------------*/
+.main-visual{
+  position: relative;
+  background-color: black;
+}
 .main-visual-img {
   height: 670px;
   overflow: hidden;
@@ -203,6 +220,10 @@ li {
  Profile
 ---------------------------------*/
 .profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
   padding: 50px 0;
 }
 
@@ -211,10 +232,11 @@ li {
   font-weight: bold;
   margin-bottom: 5px;
   text-align: center;
-  color: #737d6d;
+  color: white;
 }
 
 .profile-text {
+  color: white;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -254,35 +276,30 @@ li {
 /*--------------------------------
  Works
 ---------------------------------*/
-.works-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -40px;
+.works-list{
+  margin-top: 30px;
 }
-
-.works-item {
-  width: 31.74603%;
-  margin-right: 1.58730%;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-
-.works-item:nth-of-type(3n) {
-  margin-right: 0;
+.works-item{
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .works-img img{
   border: 1px solid #e6e6e6;
-  height: 300px;
-  width: 400px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   cursor: pointer;
+}
+
+.works-item .works-text{
+  padding: 12px 12px 24px;
 }
 
 .works-name {
   font-size: 12px;
   font-weight: bold;
-  margin-top: 8px;
 }
 
 .works-info {
@@ -313,15 +330,31 @@ li {
  Page top
 ---------------------------------*/
 .page-top {
-  font-weight: bold;
-  padding: 10px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #e6e6e6;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-right: 10%;
+  /* margin-bottom: 40px; */
 }
 
 .page-top .material-icons-outlined {
-  vertical-align: bottom;
+  position: absolute;
+  top: -12px;
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  background-color: rgba(0,0,0,0.05);
+  transition: 0.2s all ease;
+}
+
+.page-top .material-icons-outlined:hover{
+  background-color: rgba(0,0,0,0.15);
 }
 
 /*--------------------------------
@@ -329,13 +362,12 @@ li {
 ---------------------------------*/
 .footer {
   padding: 15px;
-  background-color: #737d6d;
 }
 
 .copyright {
   font-size: 25px;
   text-align: center;
-  color: #b3b3b3;
+  color: #444853;
 }
 
 @media screen and (max-width: 1200px) {
@@ -358,10 +390,6 @@ li {
 
   .pc-only {
     display: none;
-  }
-
-  .sp-only {
-    display: block;
   }
 
   /* Headline */
