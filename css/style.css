@@ -10,6 +10,10 @@ body {
   color: #333;
 }
 
+.scroll-fix{
+  overflow: hidden;
+}
+
 a {
   transition: opacity .3s;
   text-decoration: none;
@@ -91,6 +95,7 @@ li {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
+  overscroll-behavior-y: contain;
 }
 
 .whole-page #modal-wrapper .modal-window {
@@ -114,6 +119,7 @@ li {
 .whole-page #modal-wrapper .modal-window.open{
   display: block;
 }
+
 /*--------------------------------
  Swiper
 ---------------------------------*/
@@ -140,7 +146,7 @@ li {
 .header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   transition: background-color .6s;
 }
@@ -192,6 +198,8 @@ li {
  main visual
 ---------------------------------*/
 .main-visual{
+  width: 100vw;
+  height: 50vw;
   position: relative;
   background-color: black;
 }
