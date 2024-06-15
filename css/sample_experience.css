@@ -83,3 +83,38 @@ h3 {
 #experience .experience-unit:nth-of-type(even) .unit-flex .description-container {
   justify-content: flex-end;
 }
+
+@media screen and (max-width: 768px) {
+  #experience .experience-unit .unit-flex, #experience .experience-unit:nth-of-type(even) .unit-flex {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  #experience .experience-unit .unit-flex .description-container, #experience .experience-unit .unit-flex .title-container, #experience .experience-unit:nth-of-type(even) .unit-flex .title-container{
+    width: 100%;
+    justify-content: center;
+  }
+
+  #experience .experience-unit .unit-flex .center-container .bar{
+    display: none;
+  }
+
+  #experience .experience-unit .unit-flex .title-container{
+    padding-bottom: 16px;
+  }
+
+  #experience .experience-unit .unit-flex .description-container{
+    padding-top: 16px;
+  }
+
+  #experience .experience-unit .unit-flex .title-container .experience-title{
+    font-size: 24px;
+    margin: 0;
+  }
+
+  #experience .experience-unit .unit-flex .center-container .image-circle{
+    width: 64px;
+    height: 64px;
+    border-width: 2px;
+  }
+}

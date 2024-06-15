@@ -50,18 +50,22 @@ let preventChildsActions = document.getElementsByClassName("stopPropagation");
 
 function displayModal(contentName) {
     const currentOpenModal = document.getElementById(contentName);
+    const main = document.getElementsByTagName("html")[0];
     document.getElementById("modal-wrapper").classList.remove("hidden");
     // currentOpenModal.classList.remove('hidden');
     // console.log(contentName);
     currentOpenModal.classList.add('open');
+    main.classList.add("scroll-fix");
 }
 
 function hideModal() {
     const modals = document.getElementsByClassName("modal-window");
+    const main = document.getElementsByTagName("html")[0];
     document.getElementById("modal-wrapper").classList.add("hidden");
     for(let i = 0; i < modals.length;i++){
       modals[i].classList.remove('open')
     }
+    main.classList.remove("scroll-fix");
     // modalWrapper.classList.add('hidden');
     // modalWrapper.classList.remove('works_game');
     // modalWrapper.classList.remove('works_paper');
