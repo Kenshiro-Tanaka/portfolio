@@ -28,7 +28,7 @@ window.addEventListener('load', function(){
 					},
 				//typeがimageの場合
 				"image": {
-					"src": "img/sushi.webp",//画像の指定
+					"src": "img/salmon.webp",//画像の指定
 					"width": 140,//画像の幅
 					"height": 100//画像の高さ
 				}
@@ -159,7 +159,7 @@ window.addEventListener('load', function(){
 					},
 				//typeがimageの場合
 				"image": {
-					"src": "img/sushi.webp",//画像の指定
+					"src": "img/salmon.webp",//画像の指定
 					"width": 140,//画像の幅
 					"height": 100//画像の高さ
 				}
