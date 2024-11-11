@@ -65,6 +65,14 @@ li {
   padding: 0 40px;
 }
 
+.svg-upper {
+  transform: translateY(-1px);
+}
+
+.svg-lower {
+  transform: translateY(1px);
+}
+
 /*--------------------------------
  Headline
 ---------------------------------*/
