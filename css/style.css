@@ -40,7 +40,7 @@ li {
  Layout
 ---------------------------------*/
 .section {
-  padding: 80px 0;
+  padding: 80px 0px 20px;
 }
 
 .section:nth-of-type(even){
@@ -51,7 +51,7 @@ li {
   background-color: black;
 }
 
-.bg-black p, .bg-black h2, .bg-black h3, .bg-black a{
+.bg-black p, .bg-black h3, .bg-black a{
   color: white !important;
 }
 
@@ -77,7 +77,7 @@ li {
  Headline
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 48px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
@@ -89,6 +89,7 @@ li {
 .lead {
   margin-bottom: 30px;
   text-align: center;
+  color: #333;
 }
 
 
@@ -159,6 +160,38 @@ li {
 
 .works_security2 .works_security2 {
   display: block;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  bottom: 20px; /* ページネーションの位置 */
+  width: 100%;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc; /* 通常時の色 */
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 6px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.swiper-pagination-bullet:hover {
+  background: #888; /* ホバー時の色 */
+  transform: scale(1.2); /* ホバー時の拡大 */
+}
+
+.swiper-pagination-bullet-active {
+  background: #007aff; /* アクティブ状態の色 */
+  opacity: 1;
+  transform: scale(1.4); /* アクティブ時の強調 */
 }
 
 /*--------------------------------
@@ -288,8 +321,8 @@ li {
   border-radius: 1000px;
 }
 
-.aboutme-right{
-  text-align: center;
+.aboutme-right p{
+  color: #333;
 }
 
 .aboutme-name{

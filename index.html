@@ -2,30 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property='og:type' content='website'>
     <meta property='og:title' content='田中 a.k.a. NAT トップページ'>
-    <!-- <meta property='og:url' content='URLが入る'> -->
     <meta property='og:description' content='田中 a.k.a. NATのポートフォリオサイトのトップです．'>
     <title>田中 a.k.a. NAT</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="./css/sample_experience.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="./css/progressbar.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Stylesheets -->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/ress.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/sample_experience.css" rel="stylesheet">
+    <link href="./css/progressbar.css" rel="stylesheet">
+    <link href="css/skill.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/main-NAT.png" />
-
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <script src="js/particles/particles.js"></script>
-    <script src="js/particles/app.js"></script>
-    
-    <!-- <link rel=”canonical” href=”URLが入る” /> -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/NAT_icon_deformed.png">
   </head>
 
   <body>
@@ -44,8 +42,8 @@
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item"><a href="#about">About me</a></li>
-              <li class="header-nav-item"><a href="#works">Works</a></li>
               <li class="header-nav-item"><a href="#skill">Skill</a></li>
+              <li class="header-nav-item"><a href="#works">Works</a></li>
               <li class="header-nav-item"><a href="#experience">Experience</a></li>
               <li class="header-nav-item"><a href="#contact">Contact</a></li>
             </ul>
@@ -54,11 +52,11 @@
       </header>
       <!-- /header -->
 
+      <!-- main -->
       <main class="content">
         <!-- main-visual -->
         <div class="main-visual">
-          <div id="particles-js">
-          </div>
+          <div id="particles-js"></div>
           <div class="profile">
             <div class="inner">
               <p class="profile-title">NO SUSHI, NO SUCCESS.</p>
@@ -73,284 +71,323 @@
           <div class="inner">
             <h2 class="title">About me</h2>
             <div class="aboutme-flex">
-              <img class="aboutme-icon" src="./img/NAT_icon.jpg" alt="">
+              <img class="aboutme-icon" src="./img/NAT_main.jpg" alt="">
               <div class="aboutme-right">
                 <p class="aboutme-name">田中 a.k.a. NAT</p>
                 <p class="aboutme-introduction">
-                  IoT と特定音検知の2分野を研究中の国立大修士2年生．セキュリティエンジニアとして25卒で就職予定．
-                  NO SUSHI, NO SUCCESS.とは，戦略・価値創造・プレゼン作成・レスポンスなど早さ（= 鮮度）が成功には不可欠であるという考え方であり，
-                  大好物である寿司に準えたモットー．さらに，大事なのは鮮度だけでなく，地道な準備，シンプルに見えるが洗練された仕事，相手に喜んでもらうための工夫．まさに寿司．
+                  IoTと特定音検知の2分野を研究する国立大修士2年．情報セキュリティ分野での就職をする25卒．<br>
+                  モットーは「NO SUSHI, NO SUCCESS.」これは，戦略，価値創造，プレゼン作成，レスポンスなど，成功に必要な「早さ（=鮮度）」を寿司に例えたもの．
+                  さらに成功するには鮮度だけでなく，地道な準備，シンプルでありながら洗練された仕事，そして相手を喜ばせるための工夫も不可欠である．まさに寿司．
                 </p>
               </div>
             </div>
           </div>
         </section>
         <!-- /about me -->
-        
-        <!-- works -->
+
+        <!-- skill -->
         <?xml version="1.0" standalone="no"?>
         <svg class="svg-upper" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:bottom" viewBox="0 0 1440 320">
-          <path fill="#000000" fill-opacity="1" d="M0,224L24,218.7C48,213,96,203,144,213.3C192,224,240,256,288,266.7C336,277,384,267,432,250.7C480,235,528,213,576,218.7C624,224,672,256,720,245.3C768,235,816,181,864,181.3C912,181,960,235,1008,229.3C1056,224,1104,160,1152,165.3C1200,171,1248,245,1296,272C1344,299,1392,277,1416,266.7L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
-          </path>
+          <path fill="#000000" fill-opacity="1" d="M0,224L24,218.7C48,213,96,203,144,213.3C192,224,240,256,288,266.7C336,277,384,267,
+          432,250.7C480,235,528,213,576,218.7C624,224,672,256,720,245.3C768,235,816,181,864,181.3C912,181,960,235,1008,229.3C1056,224,
+          1104,160,1152,165.3C1200,171,1248,245,1296,272C1344,299,1392,277,1416,266.7L1440,256L1440,320L1416,320C1392,320,1344,320,1296,
+          320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,
+          320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
         </svg>
+        <section class="skill section" id="skill">
+          <div class="inner">
+            <h2 class="title">Skill</h2>
+            <div class="container max-w-5xl mx-auto px-8">
+            <div class="card-wraper">
+              <div class="background" id="background"></div>
+              <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+                <div class="card-main">
+                  <div class="card-inner">
+                    <div>
+                      <h3>応用情報技術者試験合格</h3>
+                      <p>2022年秋期試験で合格．現在は情報処理安全確保支援士試験合格に向けて勉強中．</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+                <div class="card-main">
+                  <div class="card-inner">
+                    <div>
+                      <h3>Basic SecCap 10</h3>
+                      <p>北海道大学，慶應義塾大学，東北大学，情報セキュリティ大学院大学の授業を受け，実践的なセキュリティ人材を育成するプログラムを修了した．
+                        2022年度に北海道地区で Basic SecCap 10を取得したのは自分を含めて2人だった．</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+                <div class="card-main">
+                  <div class="card-inner">
+                    <div>
+                      <h3>TOEIC 755点</h3>
+                      <p>大学院入試のために2022年2月 TOEIC を受験．入社までに900点をとっておきたい気持ちと研究発表のためにスピーキングを勉強したい気持ちで板挟み．</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="card relative group block p-2 h-full w-full">
+                <div class="card-main">
+                  <div class="card-inner">
+                    <div>
+                      <h3>AI活用力</h3>
+                      <p>画像生成AIでオリジナルの壁紙を作成したり，このサイトの作成などにChatGPTを活用したりしている．大学院では音声データを分析して，特定音を検知するAIの研究をしている．</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <svg class="svg-lower" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:baseline" viewBox="0 0 1440 320">
+          <path fill="#000000" fill-opacity="1" d="M0,64L18.5,74.7C36.9,85,74,107,111,106.7C147.7,107,185,85,222,69.3C258.5,53,295,43,
+          332,80C369.2,117,406,203,443,218.7C480,235,517,181,554,165.3C590.8,149,628,171,665,165.3C701.5,160,738,128,775,106.7C812.3,85,
+          849,75,886,106.7C923.1,139,960,213,997,234.7C1033.8,256,1071,224,1108,192C1144.6,160,1182,128,1218,112C1255.4,96,1292,96,1329,
+          101.3C1366.2,107,1403,117,1422,122.7L1440,128L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,
+          1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,
+          0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
+        </svg>
+        <!-- /skill -->
+
+        <!-- works -->
         <section class="works section" id="works">
           <div class="inner">
             <h2 class="title">Works</h2>
             <div class="swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper works-list">
-                  <!-- Slides -->
-                  <div class="works-item swiper-slide" onclick="displayModal('works_game')">
-                    <p class="works-img"><img src="img/siro.png" alt="" /></p>
-                    <div class="works-text">
-                      <p class="works-name">ゲーム制作</p>
-                      <p class="works-info">Programming</p>
-                    </div>
+                <!-- Slides -->
+                <div class="works-item swiper-slide" onclick="displayModal('works_game')">
+                  <p class="works-img"><img src="img/siro.png" alt="" /></p>
+                  <div class="works-text">
+                    <p class="works-name">ゲーム制作</p>
+                    <p class="works-info">Programming</p>
                   </div>
-                  <div class="works-item swiper-slide" onclick="displayModal('works_paper')">
-                    <p class="works-img"><img src="img/works_system.svg" alt="" /></p>
-                    <div class="works-text">
-                      <p class="works-name">卒業論文および学会発表</p>
-                      <p class="works-info">Research</p>
-                    </div>
+                </div>
+                <div class="works-item swiper-slide" onclick="displayModal('works_paper')">
+                  <p class="works-img"><img src="img/works_system.svg" alt="" /></p>
+                  <div class="works-text">
+                    <p class="works-name">卒業論文および学会発表</p>
+                    <p class="works-info">Research</p>
                   </div>
-                  <div class="works-item swiper-slide" onclick="displayModal('works_security2')">
-                    <p class="works-img"><img src="img/hackathon_proto.png" alt="" /></p>
-                    <div class="works-text">
-                      <p class="works-name">VS.ペアレンツ</p>
-                      <p class="works-info">Programming / Hackathon</p>
-                    </div>
+                </div>
+                <div class="works-item swiper-slide" onclick="displayModal('works_security2')">
+                  <p class="works-img"><img src="img/hackathon_proto.png" alt="" /></p>
+                  <div class="works-text">
+                    <p class="works-name">VS.ペアレンツ</p>
+                    <p class="works-info">Programming / Hackathon</p>
                   </div>
-                  <div class="works-item swiper-slide" onclick="displayModal('works_qiita')">
-                    <p class="works-img"><img src="img/qiita.png" alt="" /></p>
-                    <div class="works-text">
-                      <p class="works-name">Qiita</p>
-                      <p class="works-info">Blog / Programming / Research</p>
-                    </div>
+                </div>
+                <div class="works-item swiper-slide" onclick="displayModal('works_qiita')">
+                  <p class="works-img"><img src="img/qiita.png" alt="" /></p>
+                  <div class="works-text">
+                    <p class="works-name">Qiita</p>
+                    <p class="works-info">Blog / Programming / Research</p>
                   </div>
-                  <div class="works-item swiper-slide" onclick="displayModal('works_ippon')">
-                    <p class="works-img"><img src="img/ippon.png" alt="" /></p>
-                    <div class="works-text">
-                      <p class="works-name">IPPON PROFILE GENERATOR</p>
-                      <p class="works-info">Programming</p>
-                    </div>
+                </div>
+                <div class="works-item swiper-slide" onclick="displayModal('works_ippon')">
+                  <p class="works-img"><img src="img/ippon.png" alt="" /></p>
+                  <div class="works-text">
+                    <p class="works-name">IPPON PROFILE GENERATOR</p>
+                    <p class="works-info">Programming</p>
                   </div>
+                </div>
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
-      
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-      
-              <!-- If we need scrollbar -->
+
               <div class="swiper-scrollbar"></div>
             </div>
             <div id="modal-wrapper" class="hidden" onclick="hideModal()">
               <div class="modal-window stopPropagation" id="works_game">
-                <h3>
-                  ゲーム制作
-                </h3>
+                <h3>ゲーム制作</h3>
                 <img src="img/gamen.png" alt="" />
-                <p>何を考えて作ったのか</p>
-                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-                <p>ここで得た学びをどう活かしたのか</p>
+                <h4>概要</h4>
+                <p>大学1年生の授業時に人生で初めて作ったゲーム．りんご農家から逃げながら，画面内のりんごを取っていくとポイントが増えて，そのポイントに応じてクリア画面が変わる．</p>
+                <h4>使用技術</h4>
+                <p>Scratchを使用．</p>
+                <h4>なぜそのような実装なのか</h4>
+                <p>最初は逃げた時間を競うものにしようとしたが，ポイント制にした方がクリア画面で表示される城の画面への繋がりが自然だったから．</p>
+                <h4>どんな困難があり，どう乗り越えたのか</h4>
+                <p>当時はプログラミングもアルゴリズムも知らず，ゲームもほとんどしたことがなかったため締切までに作れそうなものを考えることから大変だった．
+                  ただ，Scratchは小学生でもゲームが作れるプログラミングであると説明されたことから諦めずに何度も当たり判定を調整したりして納得のいくものを提出した．サムネイルの城の画像は友達に描いてもらった．</p>
               </div>
               <div class="modal-window stopPropagation" id="works_paper">
-                <h3>
-                    卒業論文および学会発表
-                </h3>
+                <h3>卒業論文および学会発表</h3>
                 <img src="img/works_system.svg" alt="" width="80%" height="80%" />
-                <p>何を考えて作ったのか</p>
-                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-                <p>ここで得た学びをどう活かしたのか</p>
+                <h4>概要</h4>
+                <p>学部の卒業論文はIoTデバイスを用いたトレーサビリティの可視化検討．学会で発表した内容はIoTデバイスの低消費電力化手法．</p>
+                <h4>使用技術</h4>
+                <p>Arduino，ATコマンドによるモデム制御，HTML，JavaScript</p>
+                <h4>なぜそのような実装なのか</h4>
+                <p></p>
+                <h4>どんな困難があり，どう乗り越えたのか</h4>
+                <p></p>
               </div>
               <div class="modal-window stopPropagation" id="works_security2">
-                <h3>
-                  VS.ペアレンツ
-                </h3>
+                <h3>VS.ペアレンツ</h3>
                 <img src="img/hackathon_proto.png" alt="" /></p>
-                <p>何を考えて作ったのか</p>
-                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-                <p>ここで得た学びをどう活かしたのか</p>
+                <h4>概要</h4>
+                <p>北海道 Society 5.0をテーマにしたハッカソンで作成したWebアプリ．項目を選択したり，金額を入力したりすると親を説得するためのプレゼン資料を勝手に作成してくれる．</p>
+                <h4>使用技術</h4>
+                <p>Python（Flask），HTML，CSS，JavaScript</p>
+                <h4>なぜそのような実装なのか</h4>
+                <p>北海道における大学進学率を上げるには親の様々な不安を取り除くことが必要であり，学生本人による説得が有効であると考えた．
+                  その説得を成功させるためにはプレゼン資料が重要となるが，慣れていないプレゼン資料作成に時間を取られるのは学生からすると苦行であると思い，半自動で作成できるようにした．</p>
+                <h4>どんな困難があり，どう乗り越えたのか</h4>
+                <p>まずチームメンバーが減ったこと．</p>
               </div>
               <div class="modal-window stopPropagation" id="works_qiita">
-                <h3>
-                    Qiita
-                </h3>
+                <h3>Qiita</h3>
                 <img src="img/qiita.png" alt="" />
                 <a class="contact-item" href="https://qiita.com/NAT" target="_blank" rel="noopener">https://qiita.com/NAT</a>
-                <p>私のトップページに飛びます．</p>
-                <p>何を考えて作ったのか</p>
-                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-                <p>ここで得た学びをどう活かしたのか</p>
+                <h4>概要</h4>
+                <p>たまに書いている技術ブログ．</p>
+                <h4>使用技術</h4>
+                <p>記事ごとに異なる．</p>
+                <h4>なぜそのような実装なのか</h4>
+                <p>広告収入よりもエラーで困っている人を1人でも多く助けたいという思いから技術者が多いQiitaがベストであると判断した．Markdownで書けるのも大きい．</p>
+                <h4>どんな困難があり，どう乗り越えたのか</h4>
+                <p>嘘を拡散しないように深く調べて情報を載せるように心がけている．基本的には「やってみた」記事が多いが，最近はChatGPTを開発に使っていることもあり，
+                  気付かずに嘘を載せてしまっているかもしれないので，より一層気をつけたい．</p>
               </div>
               <div class="modal-window stopPropagation" id="works_ippon">
-                <h3>
-                    IPPON PROFILE GENERATOR
-                </h3>
+                <h3>IPPON PROFILE GENERATOR</h3>
                 <img src="img/ippon.png" alt="" width="80%" height="80%" />
                 <a class="contact-item" href="https://qiita.com/NAT/items/6413df806c2214d76230" target="_blank" rel="noopener">ここに記事あります．</a>
-                <p>何を考えて作ったのか</p>
-                <p>どのような壁にぶつかり，どう乗り越えたのか</p>
-                <p>ここで得た学びをどう活かしたのか</p>
+                <h4>概要</h4>
+                <p>IPPON グランプリのような画像を作成するプログラム．</p>
+                <h4>使用技術</h4>
+                <p>Python</p>
+                <h4>なぜそのような実装なのか</h4>
+                <p></p>
+                <h4>どんな困難があり，どう乗り越えたのか</h4>
+                <p></p>
               </div>
             </div>
         </section>
-        <svg class="svg-lower" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:baseline" viewBox="0 0 1440 320">
-          <path fill="#000000" fill-opacity="1" d="M0,64L18.5,74.7C36.9,85,74,107,111,106.7C147.7,107,185,85,222,69.3C258.5,53,295,43,332,80C369.2,117,406,203,443,218.7C480,235,517,181,554,165.3C590.8,149,628,171,665,165.3C701.5,160,738,128,775,106.7C812.3,85,849,75,886,106.7C923.1,139,960,213,997,234.7C1033.8,256,1071,224,1108,192C1144.6,160,1182,128,1218,112C1255.4,96,1292,96,1329,101.3C1366.2,107,1403,117,1422,122.7L1440,128L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-        </svg>
         <!-- /works -->
-
-        <!-- skill -->
-        <section class="skill section" id="skill">
-          <div class="inner">
-            <h2 class="title">Skill</h2>
-            <div class="skill-list">
-              <div class="gsap-target-skill skill-item">
-                <p class="skill-img"><img src="img/works_security2.svg" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">応用情報技術者試験合格</h3>
-                  <p class="skill-text">
-                    2022年秋期試験で合格．現在は情報処理安全確保支援士試験合格に向けて勉強中．</p>
-                </div>
-              </div>
-              <div class="gsap-target-skill skill-item">
-                <p class="skill-img"><img src="img/works_company.svg" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">Basic SecCap 10</h3>
-                  <p class="skill-text">
-                    北海道大学，慶應義塾大学，東北大学，情報セキュリティ大学院大学の授業を受け，実践的なセキュリティ人材を育成するプログラムを修了した．
-                    2022年度に北海道地区で Basic SecCap 10を取得したのは自分を含めて2人だった．</p>
-                </div>
-              </div>
-              <div class="gsap-target-skill skill-item">
-                <p class="skill-img"><img src="img/works_system.svg" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">TOEIC 755点</h3>
-                  <p class="skill-text">
-                    大学院入試のために2022年2月 TOEIC を受験．入社までに900点をとっておきたい気持ちと研究発表のためにスピーキングを勉強したい気持ちで板挟み．
-                </div>
-              </div>
-              <div class="gsap-target-skill skill-item">
-                <p class="skill-img"><img src="img/works_security2.svg" alt=""></p>
-                <div class="skill-body">
-                  <h3 class="skill-name">プログラミング</h3>
-                  <p class="skill-text">
-                    研究と競技プログラミングで Python を使用．研究室に Ruby の強い人がいるため入社までの1年間 Ruby を勉強したい気持ちとアルゴリズムを勉強しなければいけないという気持ちで板挟み．
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /skill -->
 
         <!-- experience -->
         <svg class="svg-upper" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:bottom" viewBox="0 0 1440 320">
-          <path fill="#000000" fill-opacity="1" d="M0,256L18.5,240C36.9,224,74,192,111,176C147.7,160,185,160,222,176C258.5,192,295,224,332,213.3C369.2,203,406,149,443,122.7C480,96,517,96,554,112C590.8,128,628,160,665,160C701.5,160,738,128,775,106.7C812.3,85,849,75,886,101.3C923.1,128,960,192,997,192C1033.8,192,1071,128,1108,117.3C1144.6,107,1182,149,1218,181.3C1255.4,213,1292,235,1329,240C1366.2,245,1403,235,1422,229.3L1440,224L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path>
+          <path fill="#000000" fill-opacity="1" d="M0,224L24,218.7C48,213,96,203,144,213.3C192,224,240,256,288,266.7C336,277,384,267,
+          432,250.7C480,235,528,213,576,218.7C624,224,672,256,720,245.3C768,235,816,181,864,181.3C912,181,960,235,1008,229.3C1056,224,
+          1104,160,1152,165.3C1200,171,1248,245,1296,272C1344,299,1392,277,1416,266.7L1440,256L1440,320L1416,320C1392,320,1344,320,1296,
+          320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,
+          320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
         </svg>
         <section class="experience section bg-black" id="experience">
           <div class="inner">
             <h2 class="title">Experience</h2>
             <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
-                  <div class="title-container maw-300">
-                      <div class="title-inner">
-                          <h3 class="experience-title">仮面浪人</h3>
-                      </div>
+                <div class="title-container maw-300">
+                  <div class="title-inner">
+                    <h3 class="experience-title">仮面浪人</h3>
                   </div>
-                  <div class="center-container">
-                      <span class="bar"></span>
-                      <div class="image-circle">
-                          <img src="./img/desktop_bg.jpg" alt="">
-                      </div>
-                      <span class="bar"></span>
+                </div>
+                <div class="center-container">
+                  <span class="bar"></span>
+                  <div class="image-circle">
+                    <img src="./img/desktop_bg.jpg" alt="">
                   </div>
-                  <div class="description-container maw-300">
-                      <div class="description-inner">
-                          <p class="description">
-                            興味のある分野で，より切磋琢磨できる環境を求めて仮面浪人を決意．スキマ時間に勉強を重ね，仮面先でフル単を達成しつつ，本命の大学に合格．
-                          </p>
-                      </div>
+                  <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                  <div class="description-inner">
+                    <p class="description">
+                      興味のある分野で，より切磋琢磨できる環境を求めて仮面浪人を決意．スキマ時間に勉強を重ね，仮面先でフル単を達成しつつ，本命の大学に合格．
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
             <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
-                  <div class="title-container maw-300">
-                      <div class="title-inner">
-                          <h3 class="experience-title">大学院入学試験と資格試験</h3>
-                      </div>
+                <div class="title-container maw-300">
+                  <div class="title-inner">
+                    <h3 class="experience-title">大学院入学試験と資格試験</h3>
                   </div>
-                  <div class="center-container">
-                      <span class="bar"></span>
-                      <div class="image-circle">
-                          <img src="./img/desktop_bg.jpg" alt="">
-                      </div>
-                      <span class="bar"></span>
+                </div>
+                <div class="center-container">
+                  <span class="bar"></span>
+                  <div class="image-circle">
+                    <img src="./img/desktop_bg.jpg" alt="">
                   </div>
-                  <div class="description-container maw-300">
-                      <div class="description-inner">
-                          <p class="description">
-                            学部生時代に高い成績をとったおかげで大学院の入学試験を免除．
-                            入試勉強をしなくてよくなった分の時間ができたため資格試験の勉強時間に充てて，そちらも合格．
-                          </p>
-                      </div>
+                  <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                  <div class="description-inner">
+                    <p class="description">
+                      学部生時代に高い成績をとったおかげで大学院の入学試験を免除．
+                      入試勉強をしなくてよくなったため資格試験の勉強をして，そちらも合格．
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
             <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
-                  <div class="title-container maw-300">
-                      <div class="title-inner">
-                          <h3 class="experience-title">卒業研究と<br>ハッカソン</h3>
-                      </div>
+                <div class="title-container maw-300">
+                  <div class="title-inner">
+                    <h3 class="experience-title">卒業研究と<br>ハッカソン</h3>
                   </div>
-                  <div class="center-container">
-                      <span class="bar"></span>
-                      <div class="image-circle">
-                          <img src="./img/desktop_bg.jpg" alt="">
-                      </div>
-                      <span class="bar"></span>
+                </div>
+                <div class="center-container">
+                  <span class="bar"></span>
+                  <div class="image-circle">
+                    <img src="./img/desktop_bg.jpg" alt="">
                   </div>
-                  <div class="description-container maw-300">
-                      <div class="description-inner">
-                          <p class="description">
-                            2023年1月，卒業研究に追われながらハッカソンにも参加．3月には卒業研究の続きで海外との共同実験．
-                          </p>
-                      </div>
+                  <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                  <div class="description-inner">
+                    <p class="description">
+                      2023年1月，卒業研究と並行してハッカソンに参加．3月には卒業研究の続きで海外との共同実験．
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
             <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
-                  <div class="title-container maw-300">
-                      <div class="title-inner">
-                          <h3 class="experience-title">就職活動</h3>
-                      </div>
+                <div class="title-container maw-300">
+                  <div class="title-inner">
+                    <h3 class="experience-title">就職活動</h3>
                   </div>
-                  <div class="center-container">
-                      <span class="bar"></span>
-                      <div class="image-circle">
-                          <img src="./img/desktop_bg.jpg" alt="">
-                      </div>
-                      <span class="bar"></span>
+                </div>
+                <div class="center-container">
+                  <span class="bar"></span>
+                  <div class="image-circle">
+                    <img src="./img/desktop_bg.jpg" alt="">
                   </div>
-                  <div class="description-container maw-300">
-                      <div class="description-inner">
-                          <p class="description">
-                            メガバンクのグループIT会社や情報セキュリティ会社など最大2週間のインターンシップに参加し，V字モデル開発や企画を経験．
-                            2024年1月，セキュリティエンジニアとして内々定．
-                          </p>
-                      </div>
+                  <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                  <div class="description-inner">
+                    <p class="description">
+                      メガバンクのグループIT企業や情報セキュリティ企業など最大2週間のインターンシップに参加し，V字モデル開発や企画を経験．
+                      2024年1月，セキュリティエンジニアとして内々定．
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
-        </div>
-      </section>
-      <svg class="svg-lower" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:bottom" viewBox="0 0 1440 320">
-        <path fill="#000000" fill-opacity="1" d="M0,160L18.5,160C36.9,160,74,160,111,165.3C147.7,171,185,181,222,170.7C258.5,160,295,128,332,133.3C369.2,139,406,181,443,213.3C480,245,517,267,554,245.3C590.8,224,628,160,665,117.3C701.5,75,738,53,775,53.3C812.3,53,849,75,886,122.7C923.1,171,960,245,997,261.3C1033.8,277,1071,235,1108,186.7C1144.6,139,1182,85,1218,101.3C1255.4,117,1292,203,1329,229.3C1366.2,256,1403,224,1422,208L1440,192L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
-      </svg>
+          </div>
+        </section>
+        <svg class="svg-lower" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:bottom" viewBox="0 0 1440 320">
+          <path fill="#000000" fill-opacity="1" d="M0,64L18.5,74.7C36.9,85,74,107,111,106.7C147.7,107,185,85,222,69.3C258.5,53,295,43,
+          332,80C369.2,117,406,203,443,218.7C480,235,517,181,554,165.3C590.8,149,628,171,665,165.3C701.5,160,738,128,775,106.7C812.3,85,
+          849,75,886,106.7C923.1,139,960,213,997,234.7C1033.8,256,1071,224,1108,192C1144.6,160,1182,128,1218,112C1255.4,96,1292,96,1329,
+          101.3C1366.2,107,1403,117,1422,122.7L1440,128L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,
+          1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,
+          0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
+        </svg>
         <!-- /experience -->
 
         <!-- contact -->
@@ -373,6 +410,7 @@
           <span class="material-icons-outlined">keyboard_double_arrow_up</span>
         </div>
       </main>
+      <!-- /main -->
 
       <!-- footer -->
       <footer class="footer">
@@ -381,15 +419,30 @@
       <!-- /footer -->
 
     </div>
+
+    <!-- JavaScript -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+
+    <!-- GSAP (GreenSock Animation Platform) -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="js/gsap/gsap.js"></script>
+
+    <!-- Progressbar.js -->
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+
+    <!-- Swiper -->
     <script src="js/swiper/swiper-bundle.min.js"></script>
     <script src="js/swiper/swiper.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Particles -->
+    <script src="js/particles/particles.js"></script>
+    <script src="js/particles/app.js"></script>
+
+    <!-- Custom JS files -->
     <script type='text/javascript' src="js/script.js"></script>
+    <script src="js/skill.js"></script>
     <script src="js/progressbar/progressbar.js"></script>
+    <!-- /JavaScript -->
   </body>
 </html>
