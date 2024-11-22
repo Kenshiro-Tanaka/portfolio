@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-  //下記particles-js↓のところはHTMLで指定したidと合わせてください
+	//下記particles-js↓のところはHTMLで指定したidと合わせてください
 	particlesJS('particles-js',{
 		//パーティクルの設定
 		"particles": {
@@ -129,8 +129,9 @@ window.addEventListener('load', function(){
 			"retina_detect": true,//Retina Display(*高画素密度のディスプレイ)を対応する
 		}
 	); 
-});window.addEventListener('load', function(){
-  //下記particles-js↓のところはHTMLで指定したidと合わせてください
+});
+window.addEventListener('load', function(){
+	//下記particles-jsのところはHTMLで指定したidと合わせてください
 	particlesJS('particles-js',{
 		//パーティクルの設定
 		"particles": {

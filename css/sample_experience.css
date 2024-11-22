@@ -12,7 +12,6 @@ h3 {
 
 #experience {
   width: 100%;
-  padding: 20px 0;
 }
 #experience .experience-unit {
   width: 100%;
@@ -65,7 +64,7 @@ h3 {
   margin: 0;
   font-size: 30px;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.2em;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .05em;
@@ -105,6 +104,10 @@ h3 {
 
   #experience .experience-unit .unit-flex .description-container{
     padding-top: 16px;
+  }
+
+  #experience .experience-unit .unit-flex .description {
+    font-size: 15px;
   }
 
   #experience .experience-unit .unit-flex .title-container .experience-title{

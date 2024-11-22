@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Stylesheets -->
@@ -63,6 +63,11 @@
               <p class="profile-text"></p>
             </div>
           </div>
+          <div class="main-visual-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#fff" fill-opacity="1" d="M0,128L21.8,112C43.6,96,87,64,131,42.7C174.5,21,218,11,262,26.7C305.5,43,349,85,393,96C436.4,107,480,85,524,112C567.3,139,611,213,655,213.3C698.2,213,742,139,785,90.7C829.1,43,873,21,916,58.7C960,96,1004,192,1047,218.7C1090.9,245,1135,203,1178,170.7C1221.8,139,1265,117,1309,122.7C1352.7,128,1396,160,1418,176L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path>
+            </svg>
+          </div>
         </div>
         <!-- /main-visual -->
 
@@ -86,7 +91,6 @@
         <!-- /about me -->
 
         <!-- skill -->
-        <?xml version="1.0" standalone="no"?>
         <svg class="svg-upper" xmlns="http://www.w3.org/2000/svg" style="width:100%;vertical-align:bottom" viewBox="0 0 1440 320">
           <path fill="#000000" fill-opacity="1" d="M0,224L24,218.7C48,213,96,203,144,213.3C192,224,240,256,288,266.7C336,277,384,267,
           432,250.7C480,235,528,213,576,218.7C624,224,672,256,720,245.3C768,235,816,181,864,181.3C912,181,960,235,1008,229.3C1056,224,
@@ -163,41 +167,47 @@
               <div class="swiper-wrapper works-list">
                 <!-- Slides -->
                 <div class="works-item swiper-slide" onclick="displayModal('works_game')">
-                  <p class="works-img"><img src="img/siro.png" alt="" /></p>
+                  <div class="works-img"><img src="img/siro.png" alt="" /></div>
+                  <div class="works-num"><p>05</p></div>
                   <div class="works-text">
                     <p class="works-name">ゲーム制作</p>
                     <p class="works-info">Programming</p>
                   </div>
                 </div>
                 <div class="works-item swiper-slide" onclick="displayModal('works_paper')">
-                  <p class="works-img"><img src="img/works_system.svg" alt="" /></p>
+                  <div class="works-img"><img src="img/works_system.svg" alt="" /></div>
+                  <div class="works-num"><p>01</p></div>
                   <div class="works-text">
                     <p class="works-name">卒業論文および学会発表</p>
                     <p class="works-info">Research</p>
                   </div>
                 </div>
                 <div class="works-item swiper-slide" onclick="displayModal('works_security2')">
-                  <p class="works-img"><img src="img/hackathon_proto.png" alt="" /></p>
+                  <div class="works-img"><img src="img/hackathon_proto.png" alt="" /></div>
+                  <div class="works-num"><p>02</p></div>
                   <div class="works-text">
                     <p class="works-name">VS.ペアレンツ</p>
                     <p class="works-info">Programming / Hackathon</p>
                   </div>
                 </div>
-                <div class="works-item swiper-slide" onclick="displayModal('works_qiita')">
-                  <p class="works-img"><img src="img/qiita.png" alt="" /></p>
-                  <div class="works-text">
-                    <p class="works-name">Qiita</p>
-                    <p class="works-info">Blog / Programming / Research</p>
-                  </div>
-                </div>
                 <div class="works-item swiper-slide" onclick="displayModal('works_ippon')">
-                  <p class="works-img"><img src="img/ippon.png" alt="" /></p>
+                  <div class="works-img"><img src="img/ippon.png" alt="" /></div>
+                  <div class="works-num"><p>03</p></div>
                   <div class="works-text">
                     <p class="works-name">IPPON PROFILE GENERATOR</p>
                     <p class="works-info">Programming</p>
                   </div>
                 </div>
+                <div class="works-item swiper-slide" onclick="displayModal('works_qiita')">
+                  <div class="works-img"><img src="img/qiita.png" alt="" /></div>
+                  <div class="works-num"><p>04</p></div>
+                  <div class="works-text">
+                    <p class="works-name">Qiita</p>
+                    <p class="works-info">Blog / Programming / Research</p>
+                  </div>
+                </div>
               </div>
+              
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
 
@@ -206,68 +216,93 @@
             <div id="modal-wrapper" class="hidden" onclick="hideModal()">
               <div class="modal-window stopPropagation" id="works_game">
                 <h3>ゲーム制作</h3>
-                <img src="img/gamen.png" alt="" />
-                <h4>概要</h4>
-                <p>大学1年生の授業時に人生で初めて作ったゲーム．りんご農家から逃げながら，画面内のりんごを取っていくとポイントが増えて，そのポイントに応じてクリア画面が変わる．</p>
-                <h4>使用技術</h4>
-                <p>Scratchを使用．</p>
-                <h4>なぜそのような実装なのか</h4>
-                <p>最初は逃げた時間を競うものにしようとしたが，ポイント制にした方がクリア画面で表示される城の画面への繋がりが自然だったから．</p>
-                <h4>どんな困難があり，どう乗り越えたのか</h4>
-                <p>当時はプログラミングもアルゴリズムも知らず，ゲームもほとんどしたことがなかったため締切までに作れそうなものを考えることから大変だった．
-                  ただ，Scratchは小学生でもゲームが作れるプログラミングであると説明されたことから諦めずに何度も当たり判定を調整したりして納得のいくものを提出した．サムネイルの城の画像は友達に描いてもらった．</p>
+                <div class="modal-img">
+                  <img class="dummy-img" src="img/gamen.png" alt="" />
+                  <img class="main-img" src="img/gamen.png" alt="" />
+                </div>
+                <div class="modal-textarea">
+                  <h4>概要</h4>
+                  <p>大学1年生の授業時に人生で初めて作ったゲーム．りんご農家から逃げながら，画面内のりんごを取っていくとポイントが増えて，そのポイントに応じてクリア画面が変わる．</p>
+                  <h4>使用技術</h4>
+                  <p>Scratchを使用．</p>
+                  <h4>なぜそのような実装なのか</h4>
+                  <p>最初は逃げた時間を競うものにしようとしたが，ポイント制にした方がクリア画面で表示される城の画面への繋がりが自然だったから．</p>
+                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <p>当時はプログラミングもアルゴリズムも知らず，ゲームもほとんどしたことがなかったため締切までに作れそうなものを考えることから大変だった．
+                    ただ，Scratchは小学生でもゲームが作れるプログラミングであると説明されたことから諦めずに何度も当たり判定を調整したりして納得のいくものを提出した．サムネイルの城の画像は友達に描いてもらった．</p>
+                </div>
               </div>
               <div class="modal-window stopPropagation" id="works_paper">
                 <h3>卒業論文および学会発表</h3>
-                <img src="img/works_system.svg" alt="" width="80%" height="80%" />
-                <h4>概要</h4>
-                <p>学部の卒業論文はIoTデバイスを用いたトレーサビリティの可視化検討．学会で発表した内容はIoTデバイスの低消費電力化手法．</p>
-                <h4>使用技術</h4>
-                <p>Arduino，ATコマンドによるモデム制御，HTML，JavaScript</p>
-                <h4>なぜそのような実装なのか</h4>
-                <p></p>
-                <h4>どんな困難があり，どう乗り越えたのか</h4>
-                <p></p>
+                <div class="modal-img">
+                  <img class="dummy-img" src="img/works_system.svg" alt="" />
+                  <img class="main-img" src="img/works_system.svg" alt="" />
+                </div>
+                <div class="modal-textarea">
+                  <h4>概要</h4>
+                  <p>学部の卒業論文はIoTデバイスを用いたトレーサビリティの可視化検討．学会で発表した内容はIoTデバイスの低消費電力化手法．</p>
+                  <h4>使用技術</h4>
+                  <p>Arduino，ATコマンドによるモデム制御，HTML，JavaScript</p>
+                  <h4>なぜそのような実装なのか</h4>
+                  <p></p>
+                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <p></p>
+                </div>
               </div>
               <div class="modal-window stopPropagation" id="works_security2">
                 <h3>VS.ペアレンツ</h3>
-                <img src="img/hackathon_proto.png" alt="" /></p>
-                <h4>概要</h4>
-                <p>北海道 Society 5.0をテーマにしたハッカソンで作成したWebアプリ．項目を選択したり，金額を入力したりすると親を説得するためのプレゼン資料を勝手に作成してくれる．</p>
-                <h4>使用技術</h4>
-                <p>Python（Flask），HTML，CSS，JavaScript</p>
-                <h4>なぜそのような実装なのか</h4>
-                <p>北海道における大学進学率を上げるには親の様々な不安を取り除くことが必要であり，学生本人による説得が有効であると考えた．
-                  その説得を成功させるためにはプレゼン資料が重要となるが，慣れていないプレゼン資料作成に時間を取られるのは学生からすると苦行であると思い，半自動で作成できるようにした．</p>
-                <h4>どんな困難があり，どう乗り越えたのか</h4>
-                <p>まずチームメンバーが減ったこと．</p>
+                <div class="modal-img">
+                  <img class="dummy-img" src="img/hackathon_proto.png" alt="" />
+                  <img class="main-img" src="img/hackathon_proto.png" alt="" />
+                </div>
+                <div class="modal-textarea">
+                  <h4>概要</h4>
+                  <p>北海道 Society 5.0をテーマにしたハッカソンで作成したWebアプリ．項目を選択したり，金額を入力したりすると親を説得するためのプレゼン資料を勝手に作成してくれる．</p>
+                  <h4>使用技術</h4>
+                  <p>Python（Flask），HTML，CSS，JavaScript</p>
+                  <h4>なぜそのような実装なのか</h4>
+                  <p>北海道における大学進学率を上げるには親の様々な不安を取り除くことが必要であり，学生本人による説得が有効であると考えた．
+                    その説得を成功させるためにはプレゼン資料が重要となるが，慣れていないプレゼン資料作成に時間を取られるのは学生からすると苦行であると思い，半自動で作成できるようにした．</p>
+                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <p>まずチームメンバーが減ったこと．</p>
+                </div>
               </div>
               <div class="modal-window stopPropagation" id="works_qiita">
                 <h3>Qiita</h3>
-                <img src="img/qiita.png" alt="" />
-                <a class="contact-item" href="https://qiita.com/NAT" target="_blank" rel="noopener">https://qiita.com/NAT</a>
-                <h4>概要</h4>
-                <p>たまに書いている技術ブログ．</p>
-                <h4>使用技術</h4>
-                <p>記事ごとに異なる．</p>
-                <h4>なぜそのような実装なのか</h4>
-                <p>広告収入よりもエラーで困っている人を1人でも多く助けたいという思いから技術者が多いQiitaがベストであると判断した．Markdownで書けるのも大きい．</p>
-                <h4>どんな困難があり，どう乗り越えたのか</h4>
-                <p>嘘を拡散しないように深く調べて情報を載せるように心がけている．基本的には「やってみた」記事が多いが，最近はChatGPTを開発に使っていることもあり，
-                  気付かずに嘘を載せてしまっているかもしれないので，より一層気をつけたい．</p>
+                <div class="modal-img">
+                  <img class="dummy-img" src="img/qiita.png" alt="" />
+                  <img class="main-img" src="img/qiita.png" alt="" />
+                </div>
+                <a class="contact-item contact-item--spec" href="https://qiita.com/NAT" target="_blank" rel="noopener">https://qiita.com/NAT</a>
+                <div class="modal-textarea">
+                  <h4>概要</h4>
+                  <p>たまに書いている技術ブログ．</p>
+                  <h4>使用技術</h4>
+                  <p>記事ごとに異なる．</p>
+                  <h4>なぜそのような実装なのか</h4>
+                  <p>広告収入よりもエラーで困っている人を1人でも多く助けたいという思いから技術者が多いQiitaがベストであると判断した．Markdownで書けるのも大きい．</p>
+                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <p>嘘を拡散しないように深く調べて情報を載せるように心がけている．基本的には「やってみた」記事が多いが，最近はChatGPTを開発に使っていることもあり，
+                    気付かずに嘘を載せてしまっているかもしれないので，より一層気をつけたい．</p>
+                </div>
               </div>
               <div class="modal-window stopPropagation" id="works_ippon">
                 <h3>IPPON PROFILE GENERATOR</h3>
-                <img src="img/ippon.png" alt="" width="80%" height="80%" />
-                <a class="contact-item" href="https://qiita.com/NAT/items/6413df806c2214d76230" target="_blank" rel="noopener">ここに記事あります．</a>
-                <h4>概要</h4>
-                <p>IPPON グランプリのような画像を作成するプログラム．</p>
-                <h4>使用技術</h4>
-                <p>Python</p>
-                <h4>なぜそのような実装なのか</h4>
-                <p></p>
-                <h4>どんな困難があり，どう乗り越えたのか</h4>
-                <p></p>
+                <div class="modal-img">
+                  <img class="dummy-img" src="img/ippon.png" alt="" />
+                  <img class="main-img" src="img/ippon.png" alt="" />
+                </div>
+                <div class="modal-textarea">
+                  <a class="contact-item contact-item--spec" href="https://qiita.com/NAT/items/6413df806c2214d76230" target="_blank" rel="noopener">ここに記事あります．</a>
+                  <h4>概要</h4>
+                  <p>IPPON グランプリのような画像を作成するプログラム．</p>
+                  <h4>使用技術</h4>
+                  <p>Python</p>
+                  <h4>なぜそのような実装なのか</h4>
+                  <p></p>
+                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <p></p>
+                </div>
               </div>
             </div>
         </section>
@@ -311,7 +346,7 @@
               <div class="unit-flex">
                 <div class="title-container maw-300">
                   <div class="title-inner">
-                    <h3 class="experience-title">大学院入学試験と資格試験</h3>
+                    <h3 class="experience-title">大学院入学試験と<span class="wrap">資格試験</span></h3>
                   </div>
                 </div>
                 <div class="center-container">
@@ -396,7 +431,7 @@
             <h2 class="title">Contact</h2>
             <p class="lead">
               お問い合わせはX（旧Twitter）のDMにて<br>
-              お願いいたします．（Xは2025年3月頃再開予定．）
+              お願いいたします．<span class="wrap">（Xは2025年3月頃再開予定．）</span>
             </p>
             <div class="contact-list">
               <a class="contact-item" href="https://twitter.com/e_tanakaNAT" target="_blank" rel="noopener">X（旧Twitter）</a>

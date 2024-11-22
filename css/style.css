@@ -36,11 +36,16 @@ li {
   display: block;
 }
 
+.wrap{
+  display: inline;
+  white-space: nowrap;
+}
+
 /*--------------------------------
  Layout
 ---------------------------------*/
 .section {
-  padding: 80px 0px 20px;
+  padding: 30px 0px 20px;
 }
 
 .section:nth-of-type(even){
@@ -92,12 +97,11 @@ li {
   color: #333;
 }
 
-
 .whole-page {
   width: 100%;
 }
 
-.whole-page #modal-wrapper {
+#modal-wrapper {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -111,26 +115,81 @@ li {
   overscroll-behavior-y: contain;
 }
 
-.whole-page #modal-wrapper .modal-window {
+#modal-wrapper .modal-window {
   background-color: white;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
   display: none;
   height: 600px;
   width: 600px;
+  max-width: 88%;
+  max-height: 70%;
+  flex-direction: column;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 16px;
   border-radius: 10px;
   z-index: 10000;
   position: relative;
   transform: translate(0px, 0px);
 }
 
+#modal-wrapper .modal-window h3{
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #333;
+  flex-shrink: 0;
+}
+
+#modal-wrapper .modal-window .modal-img{
+  height: 40%;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#modal-wrapper .modal-window .modal-img .dummy-img{
+  width: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(4px) brightness(60%);
+  position: absolute;
+  z-index: -1;
+}
+
+#modal-wrapper .modal-window .modal-img .main-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#modal-wrapper .modal-window .modal-textarea{
+  padding-top: 12px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#modal-wrapper .modal-window h4{
+  font-size: 15px;
+  color: #333;
+  margin-top: 12px;
+}
+
+#modal-wrapper .modal-window h4:first-of-type{
+  margin-top: 0px;
+}
+
+#modal-wrapper .modal-window p{
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+
 .whole-page .hidden {
   display: none !important;
 }
 
-.whole-page #modal-wrapper .modal-window.open{
-  display: block;
+#modal-wrapper .modal-window.open{
+  display: flex;
 }
 
 /*--------------------------------
@@ -166,18 +225,16 @@ li {
 .swiper-pagination {
   position: absolute;
   text-align: center;
-  bottom: 20px; /* ページネーションの位置 */
   width: 100%;
   z-index: 10;
 }
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 44px;
+  height: 6px;
   background: #ccc; /* 通常時の色 */
   display: inline-block;
-  border-radius: 50%;
-  margin: 0 6px;
+  margin: 0 4px;
   opacity: 0.8;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
@@ -189,9 +246,9 @@ li {
 }
 
 .swiper-pagination-bullet-active {
-  background: #007aff; /* アクティブ状態の色 */
+  background: #7266A1; /* アクティブ状態の色 */
   opacity: 1;
-  transform: scale(1.4); /* アクティブ時の強調 */
+  transform: scaleY(1.2); /* アクティブ時の強調 */
 }
 
 /*--------------------------------
@@ -253,7 +310,7 @@ li {
 ---------------------------------*/
 .main-visual{
   width: 100vw;
-  height: 50vw;
+  height: calc(68vw);
   position: relative;
   background-color: black;
 }
@@ -270,6 +327,19 @@ li {
   object-fit: cover;
 }
 
+.main-visual-wave{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  bottom: 0;
+}
+
+.main-visual-wave svg{
+  width: 100%;
+  transform: translateY(1px);
+}
+
 /* .sub-main-visual-img {
   height: 180px;
   background-image: url(../img/mv.svg);
@@ -282,11 +352,16 @@ li {
  Profile
 ---------------------------------*/
 .profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: calc(200vw / 9);
+  box-sizing: border-box;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%, -50%);
-  padding: 50px 0;
+  top: 0;
+  left: 0;
 }
 
 .profile-title {
@@ -365,14 +440,22 @@ li {
 /*--------------------------------
  Works
 ---------------------------------*/
+
 .works-list{
-  margin-top: 30px;
+ padding: 30px 0;
 }
+
 .works-item{
   background-color: white;
   box-sizing: border-box;
-  border-radius: 24px;
+  border-radius: 3px;
   overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, .05);
+}
+
+.works-img {
+  padding: 12px;
 }
 
 .works-img img{
@@ -382,6 +465,21 @@ li {
   cursor: pointer;
 }
 
+.works-num{
+  height: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.works-num p{
+  font-family: Oswald;
+  position: absolute;
+  color: #333;
+  left: 12px;
+  bottom: -12px;
+  font-size: 32px;
+}
+
 .works-item .works-text{
   padding: 12px 12px 24px;
 }
@@ -389,10 +487,12 @@ li {
 .works-name {
   font-size: 12px;
   font-weight: bold;
+  color: #333;
 }
 
 .works-info {
   font-size: 10px;
+  color: #333;
 }
 
 
@@ -411,10 +511,21 @@ li {
   text-align: center;
 }
 
+.contact-item--spec{
+  text-align: left;
+  margin: 0;
+  color: #0084ff;
+}
+
 .contact-text {
   margin-top: 10px;
   text-align: center;
 }
+
+.lead {
+  font-size: 15px;
+}
+
 /*--------------------------------
  Page top
 ---------------------------------*/
@@ -487,12 +598,12 @@ li {
   /* Headline */
   .title {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
 
   /* Layout */
   .section {
-    padding: 40px 0;
+    padding: 40px 0 20px;
   }
 
   .inner {
@@ -530,13 +641,35 @@ li {
 
   /* Profile */
   .profile {
-    width: 80vw;
+    width: 100%;
   }
   .profile-title {
     font-size: 24px;
   }
   .profile-text {
     font-size: 14px;
+  }
+
+  /* About me */
+  .aboutme-flex{
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+  }
+
+  .aboutme-icon{
+    margin-bottom: 12px;
+  }
+
+  .aboutme-name{
+    text-align: center;
+  }
+
+  .aboutme-introduction{
+    font-size: 15px;
   }
 
   /* Works */
@@ -552,6 +685,19 @@ li {
     flex: 0 0 48%;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  #modal-wrapper .modal-window h3{
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  #modal-wrapper .modal-window h4{
+    font-size: 14px;
+  }
+
+  #modal-wrapper .modal-window p{
+    font-size: 13px;
   }
 
   /* Skill */
