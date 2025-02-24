@@ -80,7 +80,7 @@
               <div class="aboutme-right">
                 <p class="aboutme-name">田中 a.k.a. NAT</p>
                 <p class="aboutme-introduction">
-                  IoTと特定音検知の2分野を研究する国立大修士2年．情報セキュリティ分野での就職をする25卒．<br>
+                  IoTと特定音検知の2分野を研究していた国立修士卒．就職先は情報セキュリティ分野．<br>
                   モットーは「NO SUSHI, NO SUCCESS.」これは，戦略，価値創造，プレゼン作成，レスポンスなど，成功に必要な「早さ（=鮮度）」を寿司に例えたもの．
                   さらに成功するには鮮度だけでなく，地道な準備，シンプルでありながら洗練された仕事，そして相手を喜ばせるための工夫も不可欠である．まさに寿司．
                 </p>
@@ -140,7 +140,7 @@
                   <div class="card-inner">
                     <div>
                       <h3>AI活用力</h3>
-                      <p>画像生成AIでオリジナルの壁紙を作成したり，このサイトの作成などにChatGPTを活用したりしている．大学院では音声データを分析して，特定音を検知するAIの研究をしている．</p>
+                      <p>画像生成AIでオリジナルの壁紙を作成したり，このサイトの作成などにChatGPTを活用したりしている．大学院では音声データを分析して，特定音を検知するAIの研究をしていた．</p>
                     </div>
                   </div>
                 </div>
@@ -178,7 +178,7 @@
                   <div class="works-img"><img src="img/works_system.svg" alt="" /></div>
                   <div class="works-num"><p>01</p></div>
                   <div class="works-text">
-                    <p class="works-name">卒業論文および学会発表</p>
+                    <p class="works-name">論文および学会発表</p>
                     <p class="works-info">Research</p>
                   </div>
                 </div>
@@ -210,9 +210,9 @@
               
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
-
               <div class="swiper-scrollbar"></div>
             </div>
+
             <div id="modal-wrapper" class="hidden" onclick="hideModal()">
               <div class="modal-window stopPropagation" id="works_game">
                 <h3>ゲーム制作</h3>
@@ -221,31 +221,33 @@
                   <img class="main-img" src="img/gamen.png" alt="" />
                 </div>
                 <div class="modal-textarea">
-                  <h4>概要</h4>
+                  <h4>プロジェクト概要</h4>
                   <p>大学1年生の授業時に人生で初めて作ったゲーム．りんご農家から逃げながら，画面内のりんごを取っていくとポイントが増えて，そのポイントに応じてクリア画面が変わる．</p>
-                  <h4>使用技術</h4>
+                  <h4>技術スタック</h4>
                   <p>Scratchを使用．</p>
-                  <h4>なぜそのような実装なのか</h4>
-                  <p>最初は逃げた時間を競うものにしようとしたが，ポイント制にした方がクリア画面で表示される城の画面への繋がりが自然だったから．</p>
-                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <h4>発想の背景</h4>
+                  <p>なにかランキング形式の方がユーザーが継続して使ってもらえると考えた．最初は逃げた時間を競うものにしようとしたが，ポイント制にした方がクリア画面で表示される城の画面への繋がりが自然になると思った．</p>
+                  <h4>開発の課題と対応</h4>
                   <p>当時はプログラミングもアルゴリズムも知らず，ゲームもほとんどしたことがなかったため締切までに作れそうなものを考えることから大変だった．
                     ただ，Scratchは小学生でもゲームが作れるプログラミングであると説明されたことから諦めずに何度も当たり判定を調整したりして納得のいくものを提出した．サムネイルの城の画像は友達に描いてもらった．</p>
                 </div>
               </div>
               <div class="modal-window stopPropagation" id="works_paper">
-                <h3>卒業論文および学会発表</h3>
+                <h3>論文および学会発表</h3>
                 <div class="modal-img">
                   <img class="dummy-img" src="img/works_system.svg" alt="" />
                   <img class="main-img" src="img/works_system.svg" alt="" />
                 </div>
                 <div class="modal-textarea">
-                  <h4>概要</h4>
-                  <p>学部の卒業論文はIoTデバイスを用いたトレーサビリティの可視化検討．学会で発表した内容はIoTデバイスの低消費電力化手法．</p>
-                  <h4>使用技術</h4>
-                  <p>Arduino，ATコマンドによるモデム制御，HTML，JavaScript</p>
-                  <h4>なぜそのような実装なのか</h4>
+                  <h4>研究概要</h4>
+                  <p>学部の卒業論文はIoTデバイスを用いたトレーサビリティの可視化検討．
+                    修士論文は特定音検知に対するモデルのアーキテクチャの観点から見た比較．
+                    学会での発表内容はIoTデバイスの低消費電力化手法と特定音検知に関するVGG16の評価．</p>
+                  <h4>研究手法</h4>
+                  <p>Arduino，ATコマンドによるモデム制御，HTML，JavaScript．また，Python，Tensorflow．</p>
+                  <h4>手法を選んだ理由</h4>
                   <p></p>
-                  <h4>どんな困難があり，どう乗り越えたのか</h4>
+                  <h4>開発の課題と対応</h4>
                   <p></p>
                 </div>
               </div>
@@ -256,15 +258,20 @@
                   <img class="main-img" src="img/hackathon_proto.png" alt="" />
                 </div>
                 <div class="modal-textarea">
-                  <h4>概要</h4>
-                  <p>北海道 Society 5.0をテーマにしたハッカソンで作成したWebアプリ．項目を選択したり，金額を入力したりすると親を説得するためのプレゼン資料を勝手に作成してくれる．</p>
-                  <h4>使用技術</h4>
+                  <h4>プロジェクト概要</h4>
+                  <p>北海道 Society 5.0をテーマにしたハッカソンで作成したWebアプリ．  
+                  項目を選択したり，金額を入力したりすると，親を説得するためのプレゼン資料を自動生成できる．</p>
+                  <h4>技術スタック</h4>
                   <p>Python（Flask），HTML，CSS，JavaScript</p>
-                  <h4>なぜそのような実装なのか</h4>
-                  <p>北海道における大学進学率を上げるには親の様々な不安を取り除くことが必要であり，学生本人による説得が有効であると考えた．
-                    その説得を成功させるためにはプレゼン資料が重要となるが，慣れていないプレゼン資料作成に時間を取られるのは学生からすると苦行であると思い，半自動で作成できるようにした．</p>
-                  <h4>どんな困難があり，どう乗り越えたのか</h4>
-                  <p>まずチームメンバーが減ったこと．</p>
+                  <h4>発想の背景</h4>
+                  <p>北海道における大学進学率を上げるには，親のさまざまな不安を取り除くことが必要であり，  
+                  その手段として学生本人による説得が有効だと考えた．しかし，説得には適切なプレゼン資料が
+                  重要となる一方，プレゼン資料の作成は慣れていない学生にとって負担が大きい．  
+                  そこで，プレゼン資料を半自動で作成できる仕組みを作ることで，説得の成功率を高めることを目指した．</p>
+                  <h4>開発の課題と対応</h4>
+                  <p>チームメンバーが途中で減ったため，限られたリソースで開発を進める必要が生じた．  
+                  機能の優先度を見直し，コア部分の開発に集中する方針を取った．
+                  このハッカソンでリーダーシップが芽生えた．</p>
                 </div>
               </div>
               <div class="modal-window stopPropagation" id="works_qiita">
@@ -275,15 +282,15 @@
                 </div>
                 <a class="contact-item contact-item--spec" href="https://qiita.com/NAT" target="_blank" rel="noopener">https://qiita.com/NAT</a>
                 <div class="modal-textarea">
-                  <h4>概要</h4>
-                  <p>たまに書いている技術ブログ．</p>
-                  <h4>使用技術</h4>
-                  <p>記事ごとに異なる．</p>
-                  <h4>なぜそのような実装なのか</h4>
-                  <p>広告収入よりもエラーで困っている人を1人でも多く助けたいという思いから技術者が多いQiitaがベストであると判断した．Markdownで書けるのも大きい．</p>
-                  <h4>どんな困難があり，どう乗り越えたのか</h4>
-                  <p>嘘を拡散しないように深く調べて情報を載せるように心がけている．基本的には「やってみた」記事が多いが，最近はChatGPTを開発に使っていることもあり，
-                    気付かずに嘘を載せてしまっているかもしれないので，より一層気をつけたい．</p>
+                  <h4>プロジェクト概要</h4>
+                  <p>技術的な課題のエラー解決や思いついたアイデアを具現化してQiitaで発信している．同じ問題に直面するエンジニアの助けになることを目的としている．</p>
+                  <h4>技術スタック</h4>
+                  <p>記事ごとに異なるが，就職を機に機械学習や情報セキュリティに関するトピックが多くなりそう．</p>
+                  <h4>発想の背景</h4>
+                  <p>広告収入よりも，エラーで困っている人を1人でも多く助けたいという思いから，技術者が多く集まるQiitaが最適だと判断した．</p>
+                  <h4>開発の課題と対応</h4>
+                  <p>誤った情報を拡散しないように，自分で再度検証したり，
+                    できるだけ公式ドキュメントや複数の情報源を確認しながら執筆するように心がけている．</p>
                 </div>
               </div>
               <div class="modal-window stopPropagation" id="works_ippon">
@@ -294,14 +301,16 @@
                 </div>
                 <div class="modal-textarea">
                   <a class="contact-item contact-item--spec" href="https://qiita.com/NAT/items/6413df806c2214d76230" target="_blank" rel="noopener">ここに記事あります．</a>
-                  <h4>概要</h4>
+                  <h4>プロジェクト概要</h4>
                   <p>IPPON グランプリのような画像を作成するプログラム．</p>
-                  <h4>使用技術</h4>
-                  <p>Python</p>
-                  <h4>なぜそのような実装なのか</h4>
-                  <p></p>
-                  <h4>どんな困難があり，どう乗り越えたのか</h4>
-                  <p></p>
+                  <h4>技術スタック</h4>
+                  <p>Python，OpenCV</p>
+                  <h4>発想の背景</h4>
+                  <p>美術館を訪れ，思い浮かんだアートのアイデアを具体化するために実装．</p>
+                  <h4>開発の課題と対応</h4>
+                  <p>できるだけ楽をしようと既存のツールを使おうとしたが，
+                    名前を入力しないといけないことと背景の色の変化が小さくないといけないことから，
+                    コードを書いた方が早いという結論になった．</p>
                 </div>
               </div>
             </div>
@@ -342,30 +351,7 @@
                 </div>
               </div>
             </div>
-            <div class="gsap-target-experience experience-unit">
-              <div class="unit-flex">
-                <div class="title-container maw-300">
-                  <div class="title-inner">
-                    <h3 class="experience-title">大学院入学試験と<span class="wrap">資格試験</span></h3>
-                  </div>
-                </div>
-                <div class="center-container">
-                  <span class="bar"></span>
-                  <div class="image-circle">
-                    <img src="./img/desktop_bg.jpg" alt="">
-                  </div>
-                  <span class="bar"></span>
-                </div>
-                <div class="description-container maw-300">
-                  <div class="description-inner">
-                    <p class="description">
-                      学部生時代に高い成績をとったおかげで大学院の入学試験を免除．
-                      入試勉強をしなくてよくなったため資格試験の勉強をして，そちらも合格．
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
             <div class="gsap-target-experience experience-unit">
               <div class="unit-flex">
                 <div class="title-container maw-300">
@@ -383,7 +369,7 @@
                 <div class="description-container maw-300">
                   <div class="description-inner">
                     <p class="description">
-                      2023年1月，卒業研究と並行してハッカソンに参加．3月には卒業研究の続きで海外との共同実験．
+                      2023年1月，IoTに関する卒業研究と並行してハッカソンに参加．3月には卒業研究の続きで海外との共同実験．
                     </p>
                   </div>
                 </div>
@@ -408,6 +394,53 @@
                     <p class="description">
                       メガバンクのグループIT企業や情報セキュリティ企業など最大2週間のインターンシップに参加し，V字モデル開発や企画を経験．
                       2024年1月，セキュリティエンジニアとして内々定．
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gsap-target-experience experience-unit">
+              <div class="unit-flex">
+                <div class="title-container maw-300">
+                  <div class="title-inner">
+                    <h3 class="experience-title">修士論文</h3>
+                  </div>
+                </div>
+                <div class="center-container">
+                  <span class="bar"></span>
+                  <div class="image-circle">
+                    <img src="./img/desktop_bg.jpg" alt="">
+                  </div>
+                  <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                  <div class="description-inner">
+                    <p class="description">
+                      研究室で音声に関する機械学習を新規に始めた．修士論文ではモデルの提案と比較を行った．
+                      研究をしているうちにAIサービスを触ることに抵抗がなくなり，今では開発に取り入れるようになった．
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gsap-target-experience experience-unit">
+              <div class="unit-flex">
+                <div class="title-container maw-300">
+                  <div class="title-inner">
+                    <h3 class="experience-title">そして，<br>社会人生活へ</h3>
+                  </div>
+                </div>
+                <div class="center-container">
+                  <span class="bar"></span>
+                  <div class="image-circle">
+                    <img src="./img/desktop_bg.jpg" alt="">
+                  </div>
+                  <span class="bar"></span>
+                </div>
+                <div class="description-container maw-300">
+                  <div class="description-inner">
+                    <p class="description">
+                      新人研修中．
                     </p>
                   </div>
                 </div>
